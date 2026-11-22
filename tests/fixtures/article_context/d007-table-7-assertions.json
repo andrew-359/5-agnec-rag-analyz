@@ -1,0 +1,72 @@
+{
+  "sha256": "1e5abee712c5d8552416b2fd456bcf2c37a0ba518372e64302db2b7b7bdf643f",
+  "assertions": [
+    {
+      "field": "generator_model",
+      "value": "FLAN-T5-XXL (11B)",
+      "scope": "Results on each of a collection of datasets",
+      "evidence_id": "1e5abee712c5-p15-text-1",
+      "scope_kind": "table_default",
+      "table": "7",
+      "page": 15,
+      "excluded_methods": [
+        "Self-RAG"
+      ],
+      "supporting_evidence_ids": [
+        "1e5abee712c5-p6-text-1",
+        "1e5abee712c5-p7-text-1"
+      ]
+    },
+    {
+      "field": "generator_model",
+      "value": "LLaMA2 (13B)",
+      "scope": "Self-RAG",
+      "evidence_id": "1e5abee712c5-p6-text-1",
+      "scope_kind": "method_exception",
+      "table": "7",
+      "page": 15,
+      "excluded_methods": [],
+      "supporting_evidence_ids": [
+        "1e5abee712c5-p7-text-1"
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "id": "1e5abee712c5-p15-text-1",
+      "page": 15,
+      "text": "Table 7: Results on each of a collection of datasets with FLAN-T5-XXL (11B) as the LLM. We emphasize our results in bold.",
+      "box": [
+        0.119191,
+        0.084777,
+        0.880357,
+        0.095428
+      ],
+      "precision": "text_fragment"
+    },
+    {
+      "id": "1e5abee712c5-p6-text-1",
+      "page": 6,
+      "text": "Table 1: Averaged results on a collection of benchmark datasets for open-domain question answering including the single-hop\nand multi-hop queries, with different LLMs. Self-RAG∗ is trained with a different base LLM, namely LLaMA2 (Touvron et al.,\n2023); therefore, we compare the results of FLAN-T5-XL (3B) with the results from Self-RAG with LLaMA2 (7B) and the\nresults of others with the results from Self-RAG with LLaMA2 (13B). We emphasize our results in bold, for easy comparisons.",
+      "box": [
+        0.118564,
+        0.084777,
+        0.882863,
+        0.13093
+      ],
+      "precision": "text_fragment"
+    },
+    {
+      "id": "1e5abee712c5-p7-text-1",
+      "page": 7,
+      "text": "Table 2: Results on each of a collection of datasets with FLAN-T5-XL (3B) as the LLM. We emphasize our results in bold.",
+      "box": [
+        0.128396,
+        0.084777,
+        0.871139,
+        0.095428
+      ],
+      "precision": "text_fragment"
+    }
+  ]
+}

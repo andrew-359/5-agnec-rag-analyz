@@ -1,0 +1,343 @@
+{
+  "version": {
+    "publicationId": "publication-synthetic",
+    "versionId": "version-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "runId": "run-published",
+    "pdfSha256": "a3fdfbd5fe1f99a4b0617b7fde0c48ef78fe5588e8f52430f3b392cdc33461b8",
+    "coverage": {
+      "partial": true,
+      "summary": "Контрольные таблицы"
+    },
+    "url": "/publications/publication-synthetic/versions/version-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "downloadUrl": "/api/publications/publication-synthetic/versions/version-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/export.zip"
+  },
+  "publication": {
+    "id": "publication-synthetic",
+    "title": "Синтетическая статья",
+    "pdfId": "pdf-synthetic",
+    "publishedRunId": "version-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+  },
+  "pdf": {
+    "id": "pdf-synthetic",
+    "sha256": "a3fdfbd5fe1f99a4b0617b7fde0c48ef78fe5588e8f52430f3b392cdc33461b8",
+    "url": "/api/publications/publication-synthetic/versions/version-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/source.pdf"
+  },
+  "run": {
+    "id": "version-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "schemaVersion": 1,
+    "publicationId": "publication-synthetic",
+    "pdfId": "pdf-synthetic",
+    "provenance": {
+      "kind": "saved-extraction",
+      "description": "Synthetic QA fixture",
+      "processorVersion": null
+    }
+  },
+  "manifest": {
+    "schemaVersion": 1,
+    "publicationId": "publication-synthetic",
+    "pdfId": "pdf-synthetic",
+    "runId": "version-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "document": "synthetic.pdf",
+    "pdfSha256": "a3fdfbd5fe1f99a4b0617b7fde0c48ef78fe5588e8f52430f3b392cdc33461b8",
+    "snapshotSha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+    "provenance": {
+      "kind": "saved-extraction",
+      "description": "Synthetic QA fixture",
+      "processorVersion": null
+    }
+  },
+  "results": [
+    {
+      "id": "R1",
+      "runId": "version-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "method": "Alpha",
+      "generator": "Synthetic model",
+      "dataset": "HotpotQA",
+      "metric": "EM",
+      "task": "QA",
+      "experiment": "Main",
+      "protocol": null,
+      "unit": "fraction",
+      "statistic": null,
+      "rawValue": ".422",
+      "value": "0.422",
+      "retrievalTopK": null,
+      "evidenceIds": [
+        "S1"
+      ]
+    },
+    {
+      "id": "R2",
+      "runId": "version-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "method": "Alpha",
+      "generator": "Synthetic model",
+      "dataset": "HotpotQA",
+      "metric": "EM",
+      "task": "QA",
+      "experiment": "Ablation",
+      "protocol": null,
+      "unit": "fraction",
+      "statistic": null,
+      "rawValue": ".422",
+      "value": "0.422",
+      "retrievalTopK": null,
+      "evidenceIds": [
+        "S2"
+      ]
+    },
+    {
+      "id": "R3",
+      "runId": "version-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "method": "Alpha",
+      "generator": "Synthetic model",
+      "dataset": "Other QA",
+      "metric": "EM",
+      "task": "QA",
+      "experiment": "Main",
+      "protocol": null,
+      "unit": "fraction",
+      "statistic": null,
+      "rawValue": ".422",
+      "value": "0.422",
+      "retrievalTopK": null,
+      "evidenceIds": [
+        "S3"
+      ]
+    },
+    {
+      "id": "R4",
+      "runId": "version-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "method": "Beta",
+      "generator": "Synthetic model",
+      "dataset": "HotpotQA",
+      "metric": "EM",
+      "task": "QA",
+      "experiment": "Main",
+      "protocol": null,
+      "unit": "fraction",
+      "statistic": null,
+      "rawValue": ".500",
+      "value": "0.500",
+      "retrievalTopK": null,
+      "evidenceIds": [
+        "S4"
+      ]
+    },
+    {
+      "id": "R5",
+      "runId": "version-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "method": "Gamma",
+      "generator": "",
+      "dataset": "HotpotQA",
+      "metric": "F1",
+      "task": "QA",
+      "experiment": "Main",
+      "protocol": null,
+      "unit": "fraction",
+      "statistic": null,
+      "rawValue": "0",
+      "value": "0",
+      "retrievalTopK": null,
+      "evidenceIds": [
+        "S5"
+      ]
+    },
+    {
+      "id": "R6",
+      "runId": "version-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "method": "Quoted value",
+      "generator": "",
+      "dataset": "Other study",
+      "metric": "EM",
+      "task": "QA",
+      "experiment": "Main",
+      "protocol": null,
+      "unit": "fraction",
+      "statistic": "mean",
+      "rawValue": ".238",
+      "value": "0.238",
+      "retrievalTopK": null,
+      "evidenceIds": [
+        "S6"
+      ]
+    },
+    {
+      "id": "R7",
+      "runId": "version-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "method": "Quoted value",
+      "generator": "",
+      "dataset": "Other study",
+      "metric": "Reduction",
+      "task": "QA",
+      "experiment": "Main",
+      "protocol": null,
+      "unit": "fraction",
+      "statistic": "sample_sd",
+      "rawValue": "↓ 18.4%",
+      "value": "18.4",
+      "retrievalTopK": null,
+      "evidenceIds": [
+        "S6"
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "id": "S1",
+      "runId": "version-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "pdfId": "pdf-synthetic",
+      "page": 1,
+      "table": 1,
+      "row": 1,
+      "column": 2,
+      "headers": [
+        "EM"
+      ],
+      "precision": "cell",
+      "box": [
+        0.35,
+        0.065,
+        0.51,
+        0.12
+      ]
+    },
+    {
+      "id": "S2",
+      "runId": "version-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "pdfId": "pdf-synthetic",
+      "page": 2,
+      "table": 2,
+      "row": 1,
+      "column": 2,
+      "headers": [
+        "EM"
+      ],
+      "precision": "cell",
+      "box": [
+        0.35,
+        0.065,
+        0.51,
+        0.12
+      ]
+    },
+    {
+      "id": "S3",
+      "runId": "version-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "pdfId": "pdf-synthetic",
+      "page": 1,
+      "table": 1,
+      "row": 1,
+      "column": 2,
+      "headers": [
+        "EM"
+      ],
+      "precision": "cell",
+      "box": [
+        0.35,
+        0.065,
+        0.51,
+        0.12
+      ]
+    },
+    {
+      "id": "S4",
+      "runId": "version-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "pdfId": "pdf-synthetic",
+      "page": 1,
+      "table": 1,
+      "row": 1,
+      "column": 2,
+      "headers": [
+        "EM"
+      ],
+      "precision": "cell",
+      "box": [
+        0.35,
+        0.065,
+        0.51,
+        0.12
+      ]
+    },
+    {
+      "id": "S5",
+      "runId": "version-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "pdfId": "pdf-synthetic",
+      "page": 1,
+      "table": 1,
+      "row": 1,
+      "column": 2,
+      "headers": [
+        "EM"
+      ],
+      "precision": "page"
+    },
+    {
+      "id": "S6",
+      "runId": "version-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "pdfId": "pdf-synthetic",
+      "page": 2,
+      "table": null,
+      "row": 1,
+      "column": 2,
+      "headers": [
+        "EM"
+      ],
+      "precision": "text_fragment",
+      "box": [
+        0.35,
+        0.065,
+        0.51,
+        0.12
+      ]
+    }
+  ],
+  "remarks": [
+    {
+      "id": "I1",
+      "runId": "version-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "reason": "Уточнить значение Alpha",
+      "rawText": ".422",
+      "evidenceIds": [
+        "S2"
+      ],
+      "resultIds": [
+        "R2"
+      ]
+    },
+    {
+      "id": "I2",
+      "runId": "version-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "reason": "Условие не установлено",
+      "rawText": "",
+      "evidenceIds": [],
+      "resultIds": []
+    },
+    {
+      "id": "I3",
+      "runId": "version-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "reason": "Две связанные ячейки",
+      "rawText": ".422",
+      "evidenceIds": [
+        "S1",
+        "S2"
+      ],
+      "resultIds": [
+        "R1",
+        "R2"
+      ]
+    },
+    {
+      "id": "I4",
+      "runId": "version-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "reason": "Проверить шкалу Alpha",
+      "rawText": ".422",
+      "evidenceIds": [
+        "S2"
+      ],
+      "resultIds": [
+        "R2"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2 @@
+# Optional native-PDF citation backend used by the participant kit's checker.
+pypdf==7.1.1

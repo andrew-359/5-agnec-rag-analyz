@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "name": "P003 Table 1, fixed depth from §4.2",
+  "pdf_sha256": "bb792a1bcd50800e7259ff602d5d947082b2699b7a9723529228e69239bdba22",
+  "page": 6,
+  "table": 1,
+  "conditions": [
+    {
+      "field": "retrieval_top_k",
+      "value": 1,
+      "scope": "Fixed-1 RAG",
+      "required_citations": [
+        {"fragment_id": "bb792a1bcd50-p5-text-24", "quote": "Fixed-1 RAG"},
+        {"fragment_id": "bb792a1bcd50-p5-text-26", "quote": "we retrieve the top-\nk keypoint–passage pairs"},
+        {"fragment_id": "bb792a1bcd50-p6-text-4", "quote": "Fixed-1 RAG"}
+      ]
+    }
+  ]
+}

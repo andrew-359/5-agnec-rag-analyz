@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Результаты экспериментов</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <h1>Результаты экспериментов</h1>
+      <p id="document-name" class="muted"></p>
+    </div>
+    <a class="button" href="results.csv" download>Скачать CSV</a>
+  </header>
+
+  <main class="layout">
+    <div class="card results">
+      <details id="grid" class="disclosure" hidden>
+        <summary>Прочитанная сетка <span id="grid-size" class="muted"></span></summary>
+        <div id="table-evidence" class="table-evidence" hidden></div>
+        <div class="table-wrap grid-wrap" tabindex="0" role="region" aria-label="Прочитанная сетка">
+          <table class="read-grid" aria-label="Прочитанная сетка"><tbody id="grid-cells"></tbody></table>
+        </div>
+      </details>
+      <section aria-label="Результаты метрик">
+        <div class="toolbar">
+          <label for="dataset">Датасет</label>
+          <select id="dataset" disabled><option value="">Все датасеты</option></select>
+          <span id="count" class="muted" aria-live="polite"></span>
+        </div>
+        <p id="status" role="status">Загружаем результаты…</p>
+        <div class="table-wrap" id="table-wrap" hidden>
+          <table>
+            <thead>
+              <tr><th scope="col">Метод</th><th scope="col">Генератор</th><th scope="col">Датасет</th><th scope="col">Метрика</th><th scope="col" class="number">Значение</th></tr>
+            </thead>
+            <tbody id="results"></tbody>
+          </table>
+        </div>
+      </section>
+      <section id="remarks" class="remarks" hidden>
+        <h2>Замечания</h2>
+        <ul id="remark-list"></ul>
+      </section>
+      <details id="run-metadata" class="disclosure" hidden>
+        <summary>Данные прогона</summary>
+        <div class="metadata-content">
+          <dl id="run-info"></dl>
+          <pre id="run-settings" aria-label="Настройки стратегии" hidden></pre>
+          <ul id="raw-artifacts" class="artifact-links" aria-label="Сырые выгрузки" hidden></ul>
+        </div>
+      </details>
+    </div>
+
+    <aside id="pdf-source" class="card source" aria-label="Источник в PDF">
+      <div class="source-header">
+        <div>
+          <h2>Источник в PDF</h2>
+          <p id="source-location" class="muted"></p>
+        </div>
+        <a id="source-link" class="button" target="_blank" rel="noopener" hidden>Открыть PDF</a>
+      </div>
+      <div id="source-details" class="source-details" aria-live="polite" hidden>
+        <p id="source-description"></p>
+        <p id="source-fragment" class="source-fragment"></p>
+        <p id="source-precision" class="muted"></p>
+      </div>
+      <div id="preview" class="preview" hidden>
+        <div class="page">
+          <img id="page-image" src="page.png" alt="Страница исходного PDF">
+          <div id="highlight" class="highlight" aria-hidden="true" hidden></div>
+        </div>
+      </div>
+      <p id="preview-status" class="preview-status muted" role="status" hidden></p>
+    </aside>
+  </main>
+</body>
+</html>

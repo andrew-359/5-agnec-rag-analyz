@@ -1,0 +1,537 @@
+{
+  "document": "D008.pdf",
+  "page": 14,
+  "table": 4,
+  "strategy": "pdfplumber",
+  "versions": {
+    "python": "3.12.3",
+    "pypdfium2": "5.15.2",
+    "pdfplumber": "0.11.10",
+    "pdfminer.six": "20260107"
+  },
+  "settings": {
+    "crop": [
+      75.0,
+      70.0,
+      285.0,
+      144.0
+    ],
+    "coordinate_system": "PDF points, top-left, x0/top/x1/bottom",
+    "table_settings": {
+      "vertical_strategy": "text",
+      "horizontal_strategy": "text",
+      "min_words_vertical": 2
+    }
+  },
+  "elapsed_ms": 131,
+  "source": {
+    "name": "D008.pdf",
+    "sha256": "a5f80dd3f8432157c4e3e94675729244656673a55c6163bba653df56f06bc225",
+    "pdf": "source.pdf",
+    "page": 14,
+    "preview": "page.png",
+    "previews": {
+      "14": "page.png"
+    }
+  },
+  "raw_artifacts": [],
+  "grid": {
+    "label": "Table 4",
+    "rows": 6,
+    "columns": 3,
+    "evidence_ids": [
+      "table"
+    ],
+    "caption_evidence_id": "caption",
+    "unplaced_evidence_ids": []
+  },
+  "cells": [
+    {
+      "id": "cell-0-0",
+      "row": 0,
+      "column": 0,
+      "text": "PromptLength(tokens)",
+      "row_span": 1,
+      "column_span": 1,
+      "role": "column_header",
+      "evidence_ids": [
+        "pdfplumber-0-0"
+      ]
+    },
+    {
+      "id": "cell-0-1",
+      "row": 0,
+      "column": 1,
+      "text": "Baseline(s)",
+      "row_span": 1,
+      "column_span": 1,
+      "role": "column_header",
+      "evidence_ids": [
+        "pdfplumber-0-1"
+      ]
+    },
+    {
+      "id": "cell-0-2",
+      "row": 0,
+      "column": 2,
+      "text": "CoDA(s)",
+      "row_span": 1,
+      "column_span": 1,
+      "role": "column_header",
+      "evidence_ids": [
+        "pdfplumber-0-2"
+      ]
+    },
+    {
+      "id": "cell-1-0",
+      "row": 1,
+      "column": 0,
+      "text": "100",
+      "row_span": 1,
+      "column_span": 1,
+      "role": "row_header",
+      "evidence_ids": [
+        "pdfplumber-1-0"
+      ]
+    },
+    {
+      "id": "cell-1-1",
+      "row": 1,
+      "column": 1,
+      "text": "26.7219",
+      "row_span": 1,
+      "column_span": 1,
+      "role": "data",
+      "evidence_ids": [
+        "pdfplumber-1-1"
+      ]
+    },
+    {
+      "id": "cell-1-2",
+      "row": 1,
+      "column": 2,
+      "text": "33.4681",
+      "row_span": 1,
+      "column_span": 1,
+      "role": "data",
+      "evidence_ids": [
+        "pdfplumber-1-2"
+      ]
+    },
+    {
+      "id": "cell-2-0",
+      "row": 2,
+      "column": 0,
+      "text": "259",
+      "row_span": 1,
+      "column_span": 1,
+      "role": "row_header",
+      "evidence_ids": [
+        "pdfplumber-2-0"
+      ]
+    },
+    {
+      "id": "cell-2-1",
+      "row": 2,
+      "column": 1,
+      "text": "28.3332",
+      "row_span": 1,
+      "column_span": 1,
+      "role": "data",
+      "evidence_ids": [
+        "pdfplumber-2-1"
+      ]
+    },
+    {
+      "id": "cell-2-2",
+      "row": 2,
+      "column": 2,
+      "text": "32.9018",
+      "row_span": 1,
+      "column_span": 1,
+      "role": "data",
+      "evidence_ids": [
+        "pdfplumber-2-2"
+      ]
+    },
+    {
+      "id": "cell-3-0",
+      "row": 3,
+      "column": 0,
+      "text": "341",
+      "row_span": 1,
+      "column_span": 1,
+      "role": "row_header",
+      "evidence_ids": [
+        "pdfplumber-3-0"
+      ]
+    },
+    {
+      "id": "cell-3-1",
+      "row": 3,
+      "column": 1,
+      "text": "29.3058",
+      "row_span": 1,
+      "column_span": 1,
+      "role": "data",
+      "evidence_ids": [
+        "pdfplumber-3-1"
+      ]
+    },
+    {
+      "id": "cell-3-2",
+      "row": 3,
+      "column": 2,
+      "text": "37.4260",
+      "row_span": 1,
+      "column_span": 1,
+      "role": "data",
+      "evidence_ids": [
+        "pdfplumber-3-2"
+      ]
+    },
+    {
+      "id": "cell-4-0",
+      "row": 4,
+      "column": 0,
+      "text": "1142",
+      "row_span": 1,
+      "column_span": 1,
+      "role": "row_header",
+      "evidence_ids": [
+        "pdfplumber-4-0"
+      ]
+    },
+    {
+      "id": "cell-4-1",
+      "row": 4,
+      "column": 1,
+      "text": "33.5325",
+      "row_span": 1,
+      "column_span": 1,
+      "role": "data",
+      "evidence_ids": [
+        "pdfplumber-4-1"
+      ]
+    },
+    {
+      "id": "cell-4-2",
+      "row": 4,
+      "column": 2,
+      "text": "37.8841",
+      "row_span": 1,
+      "column_span": 1,
+      "role": "data",
+      "evidence_ids": [
+        "pdfplumber-4-2"
+      ]
+    },
+    {
+      "id": "cell-5-0",
+      "row": 5,
+      "column": 0,
+      "text": "2600",
+      "row_span": 1,
+      "column_span": 1,
+      "role": "row_header",
+      "evidence_ids": [
+        "pdfplumber-5-0"
+      ]
+    },
+    {
+      "id": "cell-5-1",
+      "row": 5,
+      "column": 1,
+      "text": "39.6130",
+      "row_span": 1,
+      "column_span": 1,
+      "role": "data",
+      "evidence_ids": [
+        "pdfplumber-5-1"
+      ]
+    },
+    {
+      "id": "cell-5-2",
+      "row": 5,
+      "column": 2,
+      "text": "44.7178",
+      "row_span": 1,
+      "column_span": 1,
+      "role": "data",
+      "evidence_ids": [
+        "pdfplumber-5-2"
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "id": "page-14",
+      "page": 14,
+      "text": "",
+      "box": null,
+      "precision": "page"
+    },
+    {
+      "id": "table",
+      "page": 14,
+      "text": "Table 4",
+      "box": [
+        0.13850906638265276,
+        0.09024320001083276,
+        0.46623668505298393,
+        0.16619684368257145
+      ],
+      "precision": "table"
+    },
+    {
+      "id": "caption",
+      "page": 14,
+      "text": "Table 4: Inference latency under different prompt\nlengths.",
+      "box": [
+        0.11851229992474081,
+        0.18338917981509456,
+        0.4857240900722121,
+        0.2094242863967146
+      ],
+      "precision": "text_fragment"
+    },
+    {
+      "id": "pdfplumber-0-0",
+      "page": 14,
+      "text": "PromptLength(tokens)",
+      "box": [
+        0.13850906638265276,
+        0.09024320001083276,
+        0.3136449906429959,
+        0.10089405501564343
+      ],
+      "precision": "cell"
+    },
+    {
+      "id": "pdfplumber-0-1",
+      "page": 14,
+      "text": "Baseline(s)",
+      "box": [
+        0.3136449906429959,
+        0.09024320001083276,
+        0.4069473554184614,
+        0.10089405501564343
+      ],
+      "precision": "cell"
+    },
+    {
+      "id": "pdfplumber-0-2",
+      "page": 14,
+      "text": "CoDA(s)",
+      "box": [
+        0.4069473554184614,
+        0.09024320001083276,
+        0.46623668505298393,
+        0.10089405501564343
+      ],
+      "precision": "cell"
+    },
+    {
+      "id": "pdfplumber-1-0",
+      "page": 14,
+      "text": "100",
+      "box": [
+        0.13850906638265276,
+        0.10820845936870606,
+        0.3136449906429959,
+        0.11945122651762102
+      ],
+      "precision": "cell"
+    },
+    {
+      "id": "pdfplumber-1-1",
+      "page": 14,
+      "text": "26.7219",
+      "box": [
+        0.3136449906429959,
+        0.10820845936870606,
+        0.4069473554184614,
+        0.11945122651762102
+      ],
+      "precision": "cell"
+    },
+    {
+      "id": "pdfplumber-1-2",
+      "page": 14,
+      "text": "33.4681",
+      "box": [
+        0.4069473554184614,
+        0.10820845936870606,
+        0.46623668505298393,
+        0.11945122651762102
+      ],
+      "precision": "cell"
+    },
+    {
+      "id": "pdfplumber-2-0",
+      "page": 14,
+      "text": "259",
+      "box": [
+        0.13850906638265276,
+        0.11945122651762102,
+        0.3136449906429959,
+        0.13128590581064026
+      ],
+      "precision": "cell"
+    },
+    {
+      "id": "pdfplumber-2-1",
+      "page": 14,
+      "text": "28.3332",
+      "box": [
+        0.3136449906429959,
+        0.11945122651762102,
+        0.4069473554184614,
+        0.13128590581064026
+      ],
+      "precision": "cell"
+    },
+    {
+      "id": "pdfplumber-2-2",
+      "page": 14,
+      "text": "32.9018",
+      "box": [
+        0.4069473554184614,
+        0.11945122651762102,
+        0.46623668505298393,
+        0.13128590581064026
+      ],
+      "precision": "cell"
+    },
+    {
+      "id": "pdfplumber-3-0",
+      "page": 14,
+      "text": "341",
+      "box": [
+        0.13850906638265276,
+        0.13128590581064026,
+        0.3136449906429959,
+        0.1431199911721483
+      ],
+      "precision": "cell"
+    },
+    {
+      "id": "pdfplumber-3-1",
+      "page": 14,
+      "text": "29.3058",
+      "box": [
+        0.3136449906429959,
+        0.13128590581064026,
+        0.4069473554184614,
+        0.1431199911721483
+      ],
+      "precision": "cell"
+    },
+    {
+      "id": "pdfplumber-3-2",
+      "page": 14,
+      "text": "37.4260",
+      "box": [
+        0.4069473554184614,
+        0.13128590581064026,
+        0.46623668505298393,
+        0.1431199911721483
+      ],
+      "precision": "cell"
+    },
+    {
+      "id": "pdfplumber-4-0",
+      "page": 14,
+      "text": "1142",
+      "box": [
+        0.13850906638265276,
+        0.1431199911721483,
+        0.3136449906429959,
+        0.15495407653365637
+      ],
+      "precision": "cell"
+    },
+    {
+      "id": "pdfplumber-4-1",
+      "page": 14,
+      "text": "33.5325",
+      "box": [
+        0.3136449906429959,
+        0.1431199911721483,
+        0.4069473554184614,
+        0.15495407653365637
+      ],
+      "precision": "cell"
+    },
+    {
+      "id": "pdfplumber-4-2",
+      "page": 14,
+      "text": "37.8841",
+      "box": [
+        0.4069473554184614,
+        0.1431199911721483,
+        0.46623668505298393,
+        0.15495407653365637
+      ],
+      "precision": "cell"
+    },
+    {
+      "id": "pdfplumber-5-0",
+      "page": 14,
+      "text": "2600",
+      "box": [
+        0.13850906638265276,
+        0.15495407653365637,
+        0.3136449906429959,
+        0.16619684368257145
+      ],
+      "precision": "cell"
+    },
+    {
+      "id": "pdfplumber-5-1",
+      "page": 14,
+      "text": "39.6130",
+      "box": [
+        0.3136449906429959,
+        0.15495407653365637,
+        0.4069473554184614,
+        0.16619684368257145
+      ],
+      "precision": "cell"
+    },
+    {
+      "id": "pdfplumber-5-2",
+      "page": 14,
+      "text": "44.7178",
+      "box": [
+        0.4069473554184614,
+        0.15495407653365637,
+        0.46623668505298393,
+        0.16619684368257145
+      ],
+      "precision": "cell"
+    }
+  ],
+  "context_evidence_ids": [],
+  "results": [],
+  "remarks": [
+    {
+      "reason": "Для замера задержки неизвестны генератор, датасет, оборудование и длина генерации.",
+      "raw_text": "",
+      "source": {
+        "page": 14,
+        "table": 4,
+        "row": null,
+        "column": null,
+        "headers": [],
+        "box": null,
+        "evidence_ids": [
+          "caption",
+          "table"
+        ],
+        "cell_id": null
+      },
+      "id": "remark-0"
+    }
+  ]
+}

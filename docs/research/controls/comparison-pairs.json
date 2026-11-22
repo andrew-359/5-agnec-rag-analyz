@@ -1,0 +1,125 @@
+{
+  "kind": "acceptance-controls",
+  "pairs": [
+    {
+      "kind": "main-vs-ablation",
+      "a": {
+        "publicationId": "publication-7fcbb21b0bdf5bb222b347d0b5e8d6587aa8af5c5f855f62322d0d7ad5427d3c",
+        "versionId": "version-2f2eedcdec3d0da0c696ef3546178025337ef5c7",
+        "resultId": "R235"
+      },
+      "b": {
+        "publicationId": "publication-7fcbb21b0bdf5bb222b347d0b5e8d6587aa8af5c5f855f62322d0d7ad5427d3c",
+        "versionId": "version-2f2eedcdec3d0da0c696ef3546178025337ef5c7",
+        "resultId": "R253"
+      },
+      "expected_status": "insufficient",
+      "expected_delta": null
+    },
+    {
+      "kind": "same-main-evaluation",
+      "a": {
+        "publicationId": "publication-7fcbb21b0bdf5bb222b347d0b5e8d6587aa8af5c5f855f62322d0d7ad5427d3c",
+        "versionId": "version-2f2eedcdec3d0da0c696ef3546178025337ef5c7",
+        "resultId": "R1"
+      },
+      "b": {
+        "publicationId": "publication-7fcbb21b0bdf5bb222b347d0b5e8d6587aa8af5c5f855f62322d0d7ad5427d3c",
+        "versionId": "version-2f2eedcdec3d0da0c696ef3546178025337ef5c7",
+        "resultId": "R235"
+      },
+      "expected_status": "comparable",
+      "expected_delta": "0.218"
+    },
+    {
+      "kind": "main-vs-ablation",
+      "a": {
+        "publicationId": "publication-7fcbb21b0bdf5bb222b347d0b5e8d6587aa8af5c5f855f62322d0d7ad5427d3c",
+        "versionId": "version-721963b4aae9fb3e87997453a9a4cad74cc76ba0",
+        "resultId": "R235"
+      },
+      "b": {
+        "publicationId": "publication-7fcbb21b0bdf5bb222b347d0b5e8d6587aa8af5c5f855f62322d0d7ad5427d3c",
+        "versionId": "version-721963b4aae9fb3e87997453a9a4cad74cc76ba0",
+        "resultId": "R253"
+      },
+      "expected_status": "insufficient",
+      "expected_delta": null
+    },
+    {
+      "kind": "same-main-evaluation",
+      "a": {
+        "publicationId": "publication-7fcbb21b0bdf5bb222b347d0b5e8d6587aa8af5c5f855f62322d0d7ad5427d3c",
+        "versionId": "version-721963b4aae9fb3e87997453a9a4cad74cc76ba0",
+        "resultId": "R1"
+      },
+      "b": {
+        "publicationId": "publication-7fcbb21b0bdf5bb222b347d0b5e8d6587aa8af5c5f855f62322d0d7ad5427d3c",
+        "versionId": "version-721963b4aae9fb3e87997453a9a4cad74cc76ba0",
+        "resultId": "R235"
+      },
+      "expected_status": "comparable",
+      "expected_delta": "0.218"
+    },
+    {
+      "kind": "main-vs-ablation",
+      "a": {
+        "publicationId": "publication-7fcbb21b0bdf5bb222b347d0b5e8d6587aa8af5c5f855f62322d0d7ad5427d3c",
+        "versionId": "version-e056261e5c61d9fdc7ec84688b0a6b8b45a2caa3",
+        "resultId": "R235"
+      },
+      "b": {
+        "publicationId": "publication-7fcbb21b0bdf5bb222b347d0b5e8d6587aa8af5c5f855f62322d0d7ad5427d3c",
+        "versionId": "version-e056261e5c61d9fdc7ec84688b0a6b8b45a2caa3",
+        "resultId": "R253"
+      },
+      "expected_status": "insufficient",
+      "expected_delta": null
+    },
+    {
+      "kind": "same-main-evaluation",
+      "a": {
+        "publicationId": "publication-7fcbb21b0bdf5bb222b347d0b5e8d6587aa8af5c5f855f62322d0d7ad5427d3c",
+        "versionId": "version-e056261e5c61d9fdc7ec84688b0a6b8b45a2caa3",
+        "resultId": "R1"
+      },
+      "b": {
+        "publicationId": "publication-7fcbb21b0bdf5bb222b347d0b5e8d6587aa8af5c5f855f62322d0d7ad5427d3c",
+        "versionId": "version-e056261e5c61d9fdc7ec84688b0a6b8b45a2caa3",
+        "resultId": "R235"
+      },
+      "expected_status": "comparable",
+      "expected_delta": "0.218"
+    },
+    {
+      "kind": "main-vs-ablation",
+      "a": {
+        "publicationId": "publication-7fcbb21b0bdf5bb222b347d0b5e8d6587aa8af5c5f855f62322d0d7ad5427d3c",
+        "versionId": "version-f4725f3bafdaef5f2b0fa398a47c373bd30e57e8",
+        "resultId": "R235"
+      },
+      "b": {
+        "publicationId": "publication-7fcbb21b0bdf5bb222b347d0b5e8d6587aa8af5c5f855f62322d0d7ad5427d3c",
+        "versionId": "version-f4725f3bafdaef5f2b0fa398a47c373bd30e57e8",
+        "resultId": "R253"
+      },
+      "expected_status": "insufficient",
+      "expected_delta": null
+    },
+    {
+      "kind": "same-main-evaluation",
+      "a": {
+        "publicationId": "publication-7fcbb21b0bdf5bb222b347d0b5e8d6587aa8af5c5f855f62322d0d7ad5427d3c",
+        "versionId": "version-f4725f3bafdaef5f2b0fa398a47c373bd30e57e8",
+        "resultId": "R1"
+      },
+      "b": {
+        "publicationId": "publication-7fcbb21b0bdf5bb222b347d0b5e8d6587aa8af5c5f855f62322d0d7ad5427d3c",
+        "versionId": "version-f4725f3bafdaef5f2b0fa398a47c373bd30e57e8",
+        "resultId": "R235"
+      },
+      "expected_status": "comparable",
+      "expected_delta": "0.218"
+    }
+  ]
+}

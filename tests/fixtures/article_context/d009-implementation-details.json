@@ -1,0 +1,35 @@
+{
+  "document": "D009.pdf",
+  "sha256": "8fd9ce01afa9c483a4e7b60f4d69ff97e61df96e1611fd7bddb5a80c94714145",
+  "pages": [
+    5
+  ],
+  "fragments": [
+    {
+      "id": "8fd9ce01afa9-p5-text-17",
+      "page": 5,
+      "text": "Implementation Details. We employ Qwen2.5-\n7B-Instruct (Qwen Team, 2024) as the primary\nbackbone for PRO-STEP and most baselines. For\nspecific baselines, we utilize their official model\ncheckpoints to ensure a fair comparison: Self-RAG\nemploys its specialized Llama-2-13B variant (Asai\net al., 2024), and AutoRAG utilizes Llama-3-8B-\nInstruct (Yu et al., 2024). For retrieval, we use the\n2018 Wikipedia dump consisting of 5.9M docu-\nments, indexed with the BGE-base-en-v1.5 (Xiao\net al., 2024) retriever, and set the number of re-\ntrieved passages to k = 3 across all methods to\nensure consistency. We train PRO-STEP on a cu-\nrated mixture of 5,000 multi-hop QA questions,\ncomprising 2,000 instances each from the training",
+      "box": [
+        0.118573,
+        0.683352,
+        0.488765,
+        0.921634
+      ],
+      "precision": "text_fragment"
+    },
+    {
+      "id": "8fd9ce01afa9-p5-text-18",
+      "page": 5,
+      "text": "splits of HotpotQA and MuSiQue, and 1,000 from\n2WikiMultiHopQA. For PRM training, we sample\n16 trajectories for each of the 2,000 questions from\nSection 3.1 above. For policy optimization, we\nthen construct step-level preference pairs via PRM-\nguided VTS. Detailed data statistics and filtering\nprocedures are deferred to Section B.",
+      "box": [
+        0.512915,
+        0.415743,
+        0.884024,
+        0.525411
+      ],
+      "precision": "text_fragment"
+    }
+  ],
+  "engine_version": "0.11.10",
+  "schema_version": 1
+}

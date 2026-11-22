@@ -1,0 +1,456 @@
+{
+  "version": 1,
+  "publications": {
+    "P001": {
+      "sha256": "b12f654576b9c58f058492c908f8f8633d0c5a89c1a3404e02661986e751f32e",
+      "scope": {"in_scope": true, "page": 1, "evidence": "Название и аннотация: Customized Retrieval Augmented Generation and Benchmarking for EDA Tool Documentation QA"},
+      "metadata": {"title": {"value": "Customized Retrieval Augmented Generation and Benchmarking for EDA Tool Documentation QA", "source": "Метаданные PDF, Title"}, "authors": {"value": "Yuan Pu; Zhuolun He; Tairu Qiu; Haoyuan Wu; Bei Yu", "source": "Первый лист PDF"}, "year": {"value": "2024", "source": "Первый лист PDF, arXiv:2407.15353v2 [cs.CL] 26 Jul 2024"}}
+    },
+    "P002": {
+      "sha256": "96c7e570f1ea6f4568d24c7bd059e88cc78c12a43f08e8b5d43718a0e5a8db69",
+      "scope": {"in_scope": true, "page": 1, "evidence": "Название и аннотация: CG-RAG: Research Question Answering by Citation Graph Retrieval-Augmented LLMs"},
+      "metadata": {"title": {"value": "CG-RAG: Research Question Answering by Citation Graph Retrieval-Augmented LLMs", "source": "Метаданные PDF, Title"}, "authors": {"value": "Yuntong Hu; Zhihan Lei; Zhongjie Dai; Allen Zhang; Abhinav Angirekula; Zheng Zhang; Liang Zhao", "source": "Первый лист PDF"}, "year": {"value": "2025", "source": "Первый лист, штамп arXiv:2501.15067v1 от 25 января 2025"}}
+    },
+    "P003": {
+      "sha256": "bb792a1bcd50800e7259ff602d5d947082b2699b7a9723529228e69239bdba22",
+      "scope": {"in_scope": true, "page": 1, "evidence": "Название и аннотация: URGen: Uncertainty-guided Retrieval-augmented Generation for Guideline-Grounded Medical Question Answering"},
+      "metadata": {"title": {"value": "URGen: Uncertainty-guided Retrieval-augmented Generation for Guideline-Grounded Medical Question Answering", "source": "Первый лист PDF"}, "authors": {"value": "Mengieong Hoi; Chen Zhao; Chaoyu Lei; Huifang Zhou; Zhedong Zheng", "source": "Первый лист PDF"}, "year": {"value": "2026", "source": "Первый лист PDF, выходные данные"}}
+    },
+    "P004": {
+      "sha256": "0a9aad918a40693bda30264f4e41500a35abd90f9555ea423f3a5c44554e82fe",
+      "scope": {"in_scope": true, "page": 1, "evidence": "Название и аннотация: LCR-RAG: Enhancing Logical Consistency in Retrieval-Augmented Generation via Neuro-symbolic Reinforcement Learning"},
+      "metadata": {"title": {"value": "LCR-RAG: Enhancing Logical Consistency in Retrieval-Augmented Generation via Neuro-symbolic Reinforcement Learning", "source": "Первый лист PDF"}, "authors": {"value": "Wenxiang Zheng; Guo Tang; Shixin Jiang; Liangyu Huo; Xiyuan Zhang; Jian Xie; Ming Liu", "source": "Первый лист PDF"}, "year": {"value": "2026", "source": "Первый лист PDF, выходные данные"}}
+    },
+    "P005": {
+      "sha256": "d653fe30b35f4d413fcc761b54514da4fb21566dee0cc51abc2102555c6dec69",
+      "scope": {"in_scope": true, "page": 1, "evidence": "Название и аннотация: SPROUTRAG: Attention-Guided Tree Search with Progressive Embeddings for Long-Document RAG"},
+      "metadata": {"title": {"value": "SPROUTRAG: Attention-Guided Tree Search with Progressive Embeddings for Long-Document RAG", "source": "Первый лист PDF"}, "authors": {"value": "Amirhossein Abaskohi; Issam H. Laradji; Peter West; Giuseppe Carenini", "source": "Первый лист PDF"}, "year": {"value": "2026", "source": "Первый лист PDF, выходные данные"}}
+    },
+    "P006": {
+      "sha256": "dc74c3c79cce8e04f98afee0ab7b06035056af7fe24d86d3f9b0438e142dc121",
+      "scope": {"in_scope": true, "page": 1, "evidence": "Название и аннотация: Only Pay What You Must Spend: On-Demand Privacy Budget Payment for Differentially Private RAG"},
+      "metadata": {"title": {"value": "Only Pay What You Must Spend: On-Demand Privacy Budget Payment for Differentially Private RAG", "source": "Первый лист PDF"}, "authors": {"value": "Zhonghao Sun; Zhiliang Tian; Xinyue Fang; Shuo Ma; Juhua Zhang; Yiping Song; Dongsheng Li", "source": "Первый лист PDF"}, "year": {"value": "2026", "source": "Первый лист PDF, выходные данные"}}
+    },
+    "P007": {
+      "sha256": "df40bfd9597ebc6f5ae6ccb05519d33008ce54adc63f890383a77b1059c97bfd",
+      "scope": {"in_scope": true, "page": 1, "evidence": "Название и аннотация: Retrieval-Augmented Generation for Large Language Model based Few-shot Chinese Spell Checking"},
+      "metadata": {"title": {"value": "Retrieval-Augmented Generation for Large Language Model based Few-shot Chinese Spell Checking", "source": "Метаданные PDF, Title"}, "authors": {"value": "Ming Dong; Zhiwei Cheng; Changyin Luo; Tingting He", "source": "Метаданные PDF, Author"}, "year": {"value": "2025", "source": "Первый лист PDF, выходные данные"}}
+    },
+    "P008": {
+      "sha256": "051dcfd4eafd604460ba3b18a172c07a08726fd26e1eca4c4eeebbfc31a19995",
+      "scope": {"in_scope": true, "page": 1, "evidence": "Название и аннотация: HYBGRAG: Hybrid Retrieval-Augmented Generation on Textual and Relational Knowledge Bases"},
+      "metadata": {"title": {"value": "HYBGRAG: Hybrid Retrieval-Augmented Generation on Textual and Relational Knowledge Bases", "source": "Первый лист PDF"}, "authors": {"value": "Meng-Chieh Lee; Qi Zhu; Costas Mavromatis; Zhen Han; Soji Adeshina; Vassilis N. Ioannidis; Huzefa Rangwala; Christos Faloutsos", "source": "Первый лист PDF"}, "year": {"value": "2025", "source": "Первый лист PDF, выходные данные"}}
+    },
+    "P009": {
+      "sha256": "6ee0a1c3e47c97145c81b8deed403d26d61ee91f1a481731978caa5ff536dec7",
+      "scope": {"in_scope": true, "page": 1, "evidence": "Название и аннотация: Topic-Initiator: A Proactive Chatbot with Personalized Topic RAG for Enhancing Willingness to Converse"},
+      "metadata": {"title": {"value": "Topic-Initiator: A Proactive Chatbot with Personalized Topic RAG for Enhancing Willingness to Converse", "source": "Метаданные PDF, Title"}, "authors": {"value": "Kazuya Matsuo; Atsushi Otsuka; Narichika Nomoto; Makoto Nakatsuji", "source": "Метаданные PDF, Author"}, "year": {"value": "2026", "source": "Первый лист PDF, выходные данные"}}
+    },
+    "P010": {
+      "sha256": "1cd25acd600a30a86aa1546a909b2db13b5a4be9726936a5e18972cc807ad269",
+      "scope": {"in_scope": true, "page": 1, "evidence": "Название и аннотация: RAG-Driver: Generalisable Driving Explanations with Retrieval-Augmented In-Context Learning in Multi-Modal Large Language Model"},
+      "metadata": {"title": {"value": "RAG-Driver: Generalisable Driving Explanations with Retrieval-Augmented In-Context Learning in Multi-Modal Large Language Model", "source": "Метаданные PDF, Title"}, "authors": {"value": "Jianhao Yuan; Shuyang Sun; Daniel Omeiza; Bo Zhao; Paul Newman; Lars Kunze; Matthew Gadd", "source": "Метаданные PDF, Author"}, "year": {"value": "2026", "source": "Первый лист PDF, arXiv:2402.10828v3 [cs.RO] 6 Mar 2026"}}
+    },
+    "P011": {
+      "sha256": "6cd9c8e711da7895702ee002e9b7a6979044ea55709f1b72b3777b024100fff9",
+      "scope": {"in_scope": true, "page": 1, "evidence": "Название и аннотация: Graphs RAG at Scale: Beyond Retrieval-Augmented Generation With Labeled Property Graphs and Resource Description Framework for Complex and Unknown Search Spaces"},
+      "metadata": {"title": {"value": "Graphs RAG at Scale: Beyond Retrieval-Augmented Generation With Labeled Property Graphs and Resource Description Framework for Complex and Unknown Search Spaces", "source": "Первый лист PDF"}, "authors": {"value": "Manie Tadayon; Mayank Gupta", "source": "Метаданные PDF, Author"}, "year": {"value": "2026", "source": "Первый лист PDF, arXiv:2603.22340v1 [cs.IR] 21 Mar 2026"}}
+    },
+    "P012": {
+      "sha256": "adb2be220e6f383eda9d9fe2ecdf5eb6247e6df23486776ddfda7cb219246488",
+      "scope": {"in_scope": true, "page": 1, "evidence": "Название и аннотация: LLM-Specific Utility for Retrieval-Augmented Generation"},
+      "metadata": {"title": {"value": "LLM-Specific Utility for Retrieval-Augmented Generation", "source": "Метаданные PDF, Title"}, "authors": {"value": "Hengran Zhang; Keping Bi; Jiafeng Guo; Jiaming Zhang; Shuaiqiang Wang; Dawei Yin; Xueqi Cheng", "source": "Метаданные PDF, Author"}, "year": {"value": "2026", "source": "Первый лист PDF, выходные данные"}, "DOI": {"value": "10.1145/3799682.3840666", "source": "Первый лист PDF, ACM Reference Format и DOI https://doi.org/10.1145/3799682.3840666"}}
+    },
+    "P013": {
+      "sha256": "b435b9125176a9bd33ea4236616c75f5bba328720d0315685b331bfbd03dc5a2",
+      "scope": {"in_scope": true, "page": 1, "evidence": "Название и аннотация: BubbleRAG: Interactive Cognitive Offloading with Thought Bubble in Retrieval-Augmented Generation"},
+      "metadata": {"title": {"value": "BubbleRAG: Interactive Cognitive Offloading with Thought Bubble in Retrieval-Augmented Generation", "source": "Первый лист PDF, визуальная сверка скана"}, "authors": {"value": "Fuda Ye; Jiachuan Wang; Yongqi Zhang; Lei Chen; Shuangyin Li", "source": "Первый лист PDF, визуальная сверка скана"}, "year": {"value": "2026", "source": "Первый лист, выходные данные ACL"}}
+    },
+    "P014": {
+      "sha256": "3a9cf814e95aa17c7394559c2ebe6258288e7983b99066a4bdcd5df60379a211",
+      "scope": {"in_scope": true, "page": 1, "evidence": "Название и аннотация: Efficient Prior-Guided Reasoning for Robust Retrieval-Augmented Generation under Conflicts"},
+      "metadata": {"title": {"value": "Efficient Prior-Guided Reasoning for Robust Retrieval-Augmented Generation under Conflicts", "source": "Первый лист PDF"}, "authors": {"value": "Xiaowei Yuan; Ziyang Huang; Zhao Yang; Yequan Wang; Jun Zhao; Kang Liu", "source": "Первый лист PDF"}, "year": {"value": "2026", "source": "Первый лист PDF, выходные данные"}}
+    },
+    "P015": {
+      "sha256": "2eaeab59b555ff9c29427def7fb6cc628f0c763c0d2ec7e592593b0e94dadded",
+      "scope": {"in_scope": true, "page": 1, "evidence": "Название и аннотация: R³A: Reinforced Reasoning for Relevance Assessment for RAG in User-Generated Content Platforms"},
+      "metadata": {"title": {"value": "R³A: Reinforced Reasoning for Relevance Assessment for RAG in User-Generated Content Platforms", "source": "Первый лист PDF"}, "authors": {"value": "Xiaowei Yuan; Lei Jin; Haoxin Zhang; Ziyang Huang; Yan Gao; Yi Wu; Yao Hu; Jun Zhao; Kang Liu", "source": "Первый лист PDF"}, "year": {"value": "2026", "source": "Первый лист PDF, выходные данные"}}
+    },
+    "P016": {
+      "sha256": "8a4b30d01026856addfc4e8c1cd1b819fd8355216390b343c793a36c5465cdce",
+      "scope": {"in_scope": true, "page": 1, "evidence": "Название и аннотация: Multilingual Retrieval-Augmented Generation for Knowledge-Intensive Question Answering Task"},
+      "metadata": {"title": {"value": "Multilingual Retrieval-Augmented Generation for Knowledge-Intensive Question Answering Task", "source": "Первый лист PDF"}, "authors": {"value": "Leonardo Ranaldi; Barry Haddow; Alexandra Birch", "source": "Первый лист PDF"}, "year": {"value": "2026", "source": "Первый лист PDF, выходные данные"}}
+    },
+    "P017": {
+      "sha256": "6876cc59861da690da83978d5897a44bbf87bbc1f8a6a8145966002c41bb98ad",
+      "scope": {"in_scope": false, "page": 1, "evidence": "Оценивается ранжирование найденных страниц. Генерация вопросов и ответов используется для подготовки бенчмарка, без оценки генератора на результатах поиска."},
+      "metadata": {"title": {"value": "REAL-MM-RAG: A Real-World Multi-Modal Retrieval Benchmark", "source": "Первый лист PDF"}, "authors": {"value": "Navve Wasserman; Roi Pony; Oshri Naparstek; Adi Raz Goldfarb; Eli Schwartz; Udi Barzelay; Leonid Karlinsky", "source": "Первый лист PDF"}, "year": {"value": "2025", "source": "Первый лист PDF, выходные данные"}}
+    },
+    "P018": {
+      "sha256": "4218a755d3e20c8ce6d8a36de30ae29940f10f4d3479809350494f30afd47e47",
+      "scope": {"in_scope": true, "page": 1, "evidence": "Название и аннотация: Dual-Confidence Contrastive Decoding for Retrieval-Augmented Generation"},
+      "metadata": {"title": {"value": "Dual-Confidence Contrastive Decoding for Retrieval-Augmented Generation", "source": "Метаданные PDF, Title"}, "authors": {"value": "Raymond Li; Md Tawkat Islam Khondaker; Amirhossein Abaskohi; Gabriel Murray; Giuseppe Carenini; Issam H. Laradji", "source": "Метаданные PDF, Author"}, "year": {"value": "2026", "source": "Первый лист PDF, arXiv:2607.00570v1 [cs.CL] 1 Jul 2026"}}
+    },
+    "P019": {
+      "sha256": "c72a20afa837ac47d58b16a3c693593741259d1cf7ba8e1d42ef6a07699f775e",
+      "scope": {"in_scope": true, "page": 1, "evidence": "Название и аннотация: STRIDE: Strategic Iterative Decision-Making for Retrieval-Augmented Multi-Hop Question Answering"},
+      "metadata": {"title": {"value": "STRIDE: Strategic Iterative Decision-Making for Retrieval-Augmented Multi-Hop Question Answering", "source": "Метаданные PDF, Title"}, "authors": {"value": "Wei Chen; Lili Zhao; Zhi Zheng; HuiJun Hou; Tong Xu", "source": "Метаданные PDF, Author"}, "year": {"value": "2026", "source": "Первый лист PDF, выходные данные"}}
+    },
+    "P020": {
+      "sha256": "0df5774379226fba19b10cc165baf42a9246518214b34b36dddf05fcf912951b",
+      "scope": {"in_scope": true, "page": 1, "evidence": "Название и аннотация: Federated Retrieval Augmented Generation for Multi-Product Question Answering"},
+      "metadata": {"title": {"value": "Federated Retrieval Augmented Generation for Multi-Product Question Answering", "source": "Метаданные PDF, Title"}, "authors": {"value": "Parshin Shojaee; Sai Sree Harsha; Dan Luo; Akash Maharaj; Tong Yu; Yunyao Li", "source": "Метаданные PDF, Author"}, "year": {"value": "2025", "source": "Первый лист PDF, выходные данные"}}
+    },
+    "P021": {
+      "sha256": "d1dcc80a4c3a2aa59a2d22ec3ea4ae59223b522ddd76bae4a89848c1dbf8e77f",
+      "scope": {"in_scope": true, "page": 1, "evidence": "Название и аннотация: Seeing Through the MIRAGE: Evaluating Multimodal Retrieval Augmented Generation"},
+      "metadata": {"title": {"value": "Seeing Through the MIRAGE: Evaluating Multimodal Retrieval Augmented Generation", "source": "Первый лист PDF"}, "authors": {"value": "Alexander Martin; William Walden; Reno Kriz; Dengjia Zhang; Kate Sanders; Eugene Yang; Chihsheng Jin; Benjamin Van Durme", "source": "Первый лист PDF"}, "year": {"value": "2026", "source": "Первый лист PDF, выходные данные"}}
+    },
+    "P022": {
+      "sha256": "c575a19e048657d9eff221dfbcf20f64b8139ccab3c1de62e409419110f35d63",
+      "scope": {"in_scope": true, "page": 1, "evidence": "Название и аннотация: Fine-grained Knowledge Enhancement for Retrieval-Augmented Generation"},
+      "metadata": {"title": {"value": "Fine-grained Knowledge Enhancement for Retrieval-Augmented Generation", "source": "Первый лист PDF"}, "authors": {"value": "Jingxuan Han; Zhendong Mao; Yi Liu; Yexuan Che; Zheren Fu; Quan Wang", "source": "Первый лист PDF"}, "year": {"value": "2025", "source": "Первый лист PDF, выходные данные"}}
+    },
+    "P023": {
+      "sha256": "b2116ab86dcc220903bab97fb3bd992ff5772fc22e415ccd1732d2bfb32d4487",
+      "scope": {"in_scope": true, "page": 1, "evidence": "Название и аннотация: VideoStir: Understanding Long Videos via Spatio-Temporally Structured and Intent-Aware RAG"},
+      "metadata": {"title": {"value": "VideoStir: Understanding Long Videos via Spatio-Temporally Structured and Intent-Aware RAG", "source": "Первый лист PDF, визуальная сверка скана"}, "authors": {"value": "Honghao Fu; Miao Xu; Yiwei Wang; Dailing Zhang; Jun Liu; Yujun Cai", "source": "Первый лист PDF, визуальная сверка скана"}, "year": {"value": "2026", "source": "Первый лист, выходные данные ACL"}}
+    },
+    "P024": {
+      "sha256": "ae5435c5cca4dd566034f0605b529ee97102c8a6bddb8dc7c002b31223c4eb41",
+      "scope": {"in_scope": true, "page": 1, "evidence": "Название и аннотация: VisDoM: Multi-Document QA with Visually Rich Elements Using Multimodal Retrieval-Augmented Generation"},
+      "metadata": {"title": {"value": "VisDoM: Multi-Document QA with Visually Rich Elements Using Multimodal Retrieval-Augmented Generation", "source": "Первый лист PDF"}, "authors": {"value": "Manan Suri; Puneet Mathur; Franck Dernoncourt; Kanika Gowswami; Ryan A. Rossi; Dinesh Manocha", "source": "Первый лист PDF"}, "year": {"value": "2025", "source": "Первый лист PDF, выходные данные"}}
+    },
+    "P025": {
+      "sha256": "b1d8fac43b05add1197862e3945776cfa9782a3a5b9c4bed03d7fb25c0f4a2c4",
+      "scope": {"in_scope": true, "page": 1, "evidence": "Название и аннотация: The Good and The Bad: Exploring Privacy Issues in Retrieval-Augmented Generation (RAG)"},
+      "metadata": {"title": {"value": "The Good and The Bad: Exploring Privacy Issues in Retrieval-Augmented Generation (RAG)", "source": "Первый лист PDF"}, "authors": {"value": "Shenglai Zeng; Jiankun Zhang; Pengfei He; Yue Xing; Yiding Liu; Han Xu; Jie Ren; Shuaiqiang Wang; Dawei Yin; Yi Chang; Jiliang Tang", "source": "Первый лист PDF"}, "year": {"value": "2024", "source": "Первый лист PDF, выходные данные"}}
+    },
+    "P026": {
+      "sha256": "9743f5784e98b0dad476989c4aa9e593425492e5a1257226848d061fe61d14d7",
+      "scope": {"in_scope": true, "page": 1, "evidence": "Название и аннотация: Benchmarking Retrieval-Augmented Generation in Multi-Modal Contexts"},
+      "metadata": {"title": {"value": "Benchmarking Retrieval-Augmented Generation in Multi-Modal Contexts", "source": "Первый лист PDF, визуальная сверка скана"}, "authors": {"value": "Zhenghao Liu; Xingsheng Zhu; Tianshuo Zhou; Xinyi Zhang; Xiaoyuan Yi; Yukun Yan; Ge Yu; Maosong Sun", "source": "Первый лист PDF, визуальная сверка скана"}, "year": {"value": "2025", "source": "Первый лист, штамп arXiv:2502.17297v2 от 7 августа 2025"}}
+    },
+    "P027": {
+      "sha256": "663cfcee6f23e02db33dddeb735678394ca4bdb574f02aaea4b70e4b08da16cf",
+      "scope": {"in_scope": true, "page": 1, "evidence": "Название и аннотация: Speculative RAG: Enhancing Retrieval Augmented Generation through Drafting"},
+      "metadata": {"title": {"value": "Speculative RAG: Enhancing Retrieval Augmented Generation through Drafting", "source": "Первый лист PDF"}, "authors": {"value": "Zilong Wang; Zifeng Wang; Long T. Le; Huaixiu Steven Zheng; Swaroop Mishra; Vincent Perot; Yuwei Zhang; Anush Mattapalli; Ankur Taly; Jingbo Shang; Chen-Yu Lee; Tomas Pfister", "source": "Первый лист PDF"}, "year": {"value": "2025", "source": "Первый лист PDF, arXiv:2407.08223v2 [cs.CL] 27 Feb 2025"}}
+    },
+    "P028": {
+      "sha256": "7ec95087a089a5ed3b5d30676ea63d715c1f8a42568f1d42febab16ac56c5021",
+      "scope": {"in_scope": true, "page": 1, "evidence": "Название и аннотация: Exploring Retrieval Augmented Generation in Arabic"},
+      "metadata": {"title": {"value": "Exploring Retrieval Augmented Generation in Arabic", "source": "Первый лист PDF"}, "authors": {"value": "Samhaa R. El-Beltagy; Mohamed A. Abdallah", "source": "Первый лист PDF"}, "year": {"value": "2024", "source": "Первый лист PDF, выходные данные"}}
+    },
+    "P029": {
+      "sha256": "3e819033b0ce8e420d98483377724cd6b29000334b1674485497e5ec78e75b94",
+      "scope": {"in_scope": true, "page": 1, "evidence": "Название и аннотация: RAGPULSE: A Real-World RAG Workload Capturing Authentic Temporal Reuse Patterns for Efficient Serving"},
+      "metadata": {"title": {"value": "RAGPULSE: A Real-World RAG Workload Capturing Authentic Temporal Reuse Patterns for Efficient Serving", "source": "Первый лист PDF"}, "authors": {"value": "Zhengchao Wang; Yitao Hu; Zhuxuan Chang; Jianing Ye; Guotao Yang; Tianhao Lai; Jiazheng Yu; Zhixin Zhao; Liang Zheng; Youpeng Deng; Sheng Chen; Keqiu Li", "source": "Первый лист PDF"}, "year": {"value": "2026", "source": "Первый лист PDF, выходные данные"}}
+    },
+    "P030": {
+      "sha256": "ddcc7b10e6b27998ce22969a4eb3a88335253aeb044d615b316379d4d1c0daea",
+      "scope": {"in_scope": true, "page": 1, "evidence": "Название и аннотация: PDF Retrieval Augmented Question Answering"},
+      "metadata": {"title": {"value": "PDF Retrieval Augmented Question Answering", "source": "Первый лист PDF, визуальная сверка скана"}, "authors": {"value": "Thi Thu Uyen Hoang; Meenakshi Rajendran; Kun Zhang; Yuhan Wu; Viet Anh Nguyen", "source": "Первый лист PDF, визуальная сверка скана"}, "year": {"value": "2026", "source": "Первый лист, штамп arXiv:2506.18027v3 от 7 апреля 2026"}}
+    },
+    "P031": {
+      "sha256": "5694da438a3928407d194f67e058458665f0687b17790b9cee03ffe71cf39ca2",
+      "scope": {"in_scope": true, "page": 1, "evidence": "Название и аннотация: When Context Misleads: Intent-Guided Decoding for Robust Retrieval-Augmented Generation"},
+      "metadata": {"title": {"value": "When Context Misleads: Intent-Guided Decoding for Robust Retrieval-Augmented Generation", "source": "Метаданные PDF, Title"}, "authors": {"value": "Haolin Jin; Pengyue Yang; Huaming Chen", "source": "Метаданные PDF, Author"}, "year": {"value": "2026", "source": "Первый лист PDF, arXiv:2608.16515v1 [cs.CL] 17 Aug 2026"}}
+    },
+    "P032": {
+      "sha256": "7fb1e22399626bbd11bd8d869277fb19308c0d8b71a22ffa8b41aadb984e6a89",
+      "scope": {"in_scope": true, "page": 5, "evidence": "Пограничный случай. HalluGuard проверяет ответы с контекстом из LLM-AggreFact, включая RAGTruth. Оценивается компонент проверки ответов RAG."},
+      "metadata": {"title": {"value": "HalluGuard: Evidence-Grounded Small Reasoning Models to Mitigate Hallucinations in Retrieval-Augmented Generation", "source": "Первый лист PDF"}, "authors": {"value": "Loris Bergeron; Ioana Buhnila; Jérôme François; Radu State", "source": "Первый лист PDF"}, "year": {"value": "2026", "source": "Первый лист PDF, выходные данные"}}
+    },
+    "P033": {
+      "sha256": "defa7c8a0115441ab6570c25436653ad69a8016512168a53ee539ecfab45a903",
+      "scope": {"in_scope": true, "page": 1, "evidence": "Название и аннотация: SCAN: Semantic Document Layout Analysis for Textual and Visual Retrieval-Augmented Generation"},
+      "metadata": {"title": {"value": "SCAN: Semantic Document Layout Analysis for Textual and Visual Retrieval-Augmented Generation", "source": "Первый лист PDF, визуальная сверка скана"}, "authors": {"value": "Nobuhiro Ueda; Yuyang Dong; Krisztián Boros; Daiki Ito; Takuya Sera; Masafumi Oyamada", "source": "Первый лист PDF, визуальная сверка скана"}, "year": {"value": "2026", "source": "Первый лист, выходные данные EACL"}}
+    },
+    "P034": {
+      "sha256": "95a4877878e0c863b73f5fded4392593daab05eb300bd6cfa532c8aa4b60c855",
+      "scope": {"in_scope": true, "page": 1, "evidence": "Название и аннотация: From Norms to Indicators (N2I-RAG): An Agentic Retrieval-Augmented Generation Framework for Legal Indicator Computation"},
+      "metadata": {"title": {"value": "From Norms to Indicators (N2I-RAG): An Agentic Retrieval-Augmented Generation Framework for Legal Indicator Computation", "source": "Метаданные PDF, Title"}, "authors": {"value": "Youssef Al Mouatamid; Marie Bonnin; Jihad Zahir", "source": "Метаданные PDF, Author"}, "year": {"value": "2026", "source": "Первый лист PDF, arXiv:2605.26926v1 [cs.AI] 26 May 2026"}}
+    },
+    "P035": {
+      "sha256": "c6bfe8b6df619513a5839c3232d4942805fb33f1c27cba56f0a0aacf519debd4",
+      "scope": {"in_scope": true, "page": 1, "evidence": "Название и аннотация: Removal of Hallucination on Hallucination: Debate-Augmented RAG"},
+      "metadata": {"title": {"value": "Removal of Hallucination on Hallucination: Debate-Augmented RAG", "source": "Первый лист PDF"}, "authors": {"value": "Wentao Hu; Wengyu Zhang; Yiyang Jiang; Chen Jason Zhang; Xiaoyong Wei; Qing Li", "source": "Первый лист PDF"}, "year": {"value": "2025", "source": "Первый лист PDF, выходные данные"}}
+    },
+    "P036": {
+      "sha256": "0d4264e2aa895925900ba8c6b42ccaf21515ff73a491ef5049606f7b163e0142",
+      "scope": {"in_scope": true, "page": 1, "evidence": "Название и аннотация: RAG-IT: Retrieval-Augmented Instruction Tuning for Automated Financial Analysis - A Case Study for the Semiconductor Sector"},
+      "metadata": {"title": {"value": "RAG-IT: Retrieval-Augmented Instruction Tuning for Automated Financial Analysis - A Case Study for the Semiconductor Sector", "source": "Метаданные PDF, Title"}, "authors": {"value": "Hai-Thien To; Tien-Cuong Bui; Van-Duc Le", "source": "Метаданные PDF, Author"}, "year": {"value": "2025", "source": "Первый лист PDF, arXiv:2412.08179v3 [q-fin.ST] 9 Dec 2025"}}
+    },
+    "P037": {
+      "sha256": "1e1db0a851d8e48f88b773736ec296912d6a40903963525951aa64fede8f2479",
+      "scope": {"in_scope": true, "page": 1, "evidence": "Название и аннотация: A Collaborative Multi-Agent Approach to Retrieval-Augmented Generation Across Diverse Data Sources"},
+      "metadata": {"title": {"value": "A Collaborative Multi-Agent Approach to Retrieval-Augmented Generation Across Diverse Data Sources", "source": "Первый лист PDF"}, "authors": {"value": "Aniruddha Salve; Mahesh Deshmukh; Saba Attar; Sayali Shivpuje; Arnab Mitra Utsab", "source": "Первый лист PDF"}, "year": {"value": "2024", "source": "Первый лист PDF, arXiv:2412.05838v1 [cs.AI] 8 Dec 2024"}}
+    },
+    "P038": {
+      "sha256": "5e45a944852b4053f16798d2d135d9d6a662d3398028b706ce1e2ed780ac22c4",
+      "scope": {"in_scope": true, "page": 1, "evidence": "Название и аннотация: Optimizing Retrieval-Augmented Generation with Elasticsearch for Enhanced Question-Answering Systems"},
+      "metadata": {"title": {"value": "Optimizing Retrieval-Augmented Generation with Elasticsearch for Enhanced Question-Answering Systems", "source": "Первый лист PDF"}, "authors": {"value": "Jiajing Chen; Runyuan Bao; Hongye Zheng; Zhen Qi; Jianjun Wei; Jiacheng Hu", "source": "Первый лист PDF"}, "year": {"value": "2024", "source": "Первичный выпуск arXiv от 18 октября 2024, совпадают заголовок и все авторы PDF: https://arxiv.org/abs/2410.14167"}}
+    },
+    "P039": {
+      "sha256": "b271a200caf7d469d86b5bff861ec694bc1b39a73e38aa3fbfef01f7bc882543",
+      "scope": {"in_scope": true, "page": 1, "evidence": "Название и аннотация: TagRAG: Tag-guided Hierarchical Knowledge Graph Retrieval-Augmented Generation"},
+      "metadata": {"title": {"value": "TagRAG: Tag-guided Hierarchical Knowledge Graph Retrieval-Augmented Generation", "source": "Первый лист PDF"}, "authors": {"value": "Wenbiao Tao; Xinyuan Li; Yunshi Lan; Weining Qian", "source": "Первый лист PDF"}, "year": {"value": "2026", "source": "Первый лист PDF, выходные данные"}}
+    },
+    "P040": {
+      "sha256": "06e5ddd7d50063ec998a2c6fa8df94290beb7ac7327d1a171ad8dcab527bafb4",
+      "scope": {"in_scope": true, "page": 1, "evidence": "Название и аннотация: GEAR: Graph-enhanced Agent for Retrieval-augmented Generation"},
+      "metadata": {"title": {"value": "GEAR: Graph-enhanced Agent for Retrieval-augmented Generation", "source": "Первый лист PDF"}, "authors": {"value": "Zhili Shen; Chenxin Diao; Pavlos Vougiouklis; Pascual Merita; Shriram Piramanayagam; Enting Chen; Damien Graux; Andre Melo; Ruofei Lai; Zeren Jiang; Zhongyang Li; Ye Qi; Yang Ren; Dandan Tu; Jeff Z. Pan", "source": "Первый лист PDF"}, "year": {"value": "2025", "source": "Первый лист PDF, выходные данные"}}
+    },
+    "P041": {
+      "sha256": "b0456bdb5080d60db357a5f5aedbd7fe2518dd9ae861fce31babe089c0d9ddc2",
+      "scope": {"in_scope": true, "page": 1, "evidence": "Название и аннотация: Knowledge Graph-Guided Retrieval Augmented Generation"},
+      "metadata": {"title": {"value": "Knowledge Graph-Guided Retrieval Augmented Generation", "source": "Первый лист PDF"}, "authors": {"value": "Xiangrong Zhu; Yuexiang Xie; Yi Liu; Yaliang Li; Wei Hu", "source": "Первый лист PDF"}, "year": {"value": "2025", "source": "Первый лист PDF, выходные данные"}}
+    },
+    "P042": {
+      "sha256": "9af1a8a6c4be062718c5a3a03afa5b9957e60cd853af36a869060e0158a5fab9",
+      "scope": {"in_scope": true, "page": 1, "evidence": "Название и аннотация: Evaluating the Impact of Source Diversity for RAG in Historical Research"},
+      "metadata": {"title": {"value": "Evaluating the Impact of Source Diversity for RAG in Historical Research", "source": "Метаданные PDF, Title"}, "authors": {"value": "Ruhi Mahadeshwar; Andreas van Cranenburgh; Tommaso Caselli; Malvina Nissim", "source": "Метаданные PDF, Author"}, "year": {"value": "2026", "source": "Первый лист PDF, выходные данные"}}
+    },
+    "P043": {
+      "sha256": "7ff268215ea0020f38ce08d68cd4406b94bf7273bda3bebab0a43eaf21a7aef0",
+      "scope": {"in_scope": true, "page": 1, "evidence": "Название и аннотация: MoM: Mixtures of Scenario-Aware Document Memories for Retrieval-Augmented Generation Systems"},
+      "metadata": {"title": {"value": "MoM: Mixtures of Scenario-Aware Document Memories for Retrieval-Augmented Generation Systems", "source": "Метаданные PDF, Title"}, "authors": {"value": "Jihao Zhao; Zhiyuan Ji; Simin Niu; Hanyu Wang; Feiyu Xiong; Zhiyu Li", "source": "Метаданные PDF, Author"}, "year": {"value": "2025", "source": "Первый лист PDF, arXiv:2510.14252v1 [cs.CL] 16 Oct 2025"}}
+    },
+    "P044": {
+      "sha256": "e1fdfa6720fe702207640b17129d1d59e74cd920bc116fa7531d607d53e81011",
+      "scope": {"in_scope": true, "page": 1, "evidence": "Название и аннотация: Conversation AI Dialog for Medicare powered by Finetuning and Retrieval Augmented Generation"},
+      "metadata": {"title": {"value": "Conversation AI Dialog for Medicare powered by Finetuning and Retrieval Augmented Generation", "source": "Первый лист PDF, визуальная сверка скана"}, "authors": {"value": "Atharva Mangeshkumar Agrawal; Rutika Pandurang Shinde; Vasanth Kumar Bhukya; Ashmita Chakraborty; Sagar Bharat Shah; Tanmay Shukla; Sree Pradeep Kumar Relangi; Nilesh Mutyam", "source": "Первый лист PDF, визуальная сверка скана"}, "year": {"value": "2025", "source": "Датированный выпуск arXiv от 4 февраля 2025, совпадают заголовок и все восемь авторов PDF: https://arxiv.org/abs/2502.02249"}},
+      "metadata_notes": {"year": "На скане указан выпуск Spring (2022). В CSV указан год датированной версии arXiv (2025) с тем же заголовком и всеми авторами. Год журнального выпуска по скану остаётся спорным."}
+    },
+    "P045": {
+      "sha256": "a1829b0be823b96ae31a8818d6fc9487c941d10d0bb54b10d0d377c8273e9858",
+      "scope": {"in_scope": true, "page": 1, "evidence": "Название и аннотация: CoRe-MMRAG: Cross-Source Knowledge Reconciliation for Multimodal RAG"},
+      "metadata": {"title": {"value": "CoRe-MMRAG: Cross-Source Knowledge Reconciliation for Multimodal RAG", "source": "Первый лист PDF"}, "authors": {"value": "Yang Tian; Fan Liu; Jingyuan Zhang; Victoria W.; Yupeng Hu; Liqiang Nie", "source": "Первый лист PDF"}, "year": {"value": "2025", "source": "Первый лист PDF, выходные данные"}}
+    },
+    "P046": {
+      "sha256": "0a43eb9b433d54c9fc8ad3bc9dc996122a45b3c2e84b0895830c9118d16fc2fb",
+      "scope": {"in_scope": true, "page": 5, "evidence": "Пограничный случай. Сопоставляет детекторы галлюцинаций в ответах RAGTruth и на HotpotQA с предоставленными документами. Оценивается компонент проверки ответов RAG."},
+      "metadata": {"title": {"value": "Logic Matters in Lightweight Hallucination Classification for RAG System", "source": "Первый лист PDF"}, "authors": {"value": "Ningyuan Yang; Kaizhu Huang", "source": "Первый лист PDF"}, "year": {"value": "2026", "source": "Первый лист PDF, выходные данные"}}
+    },
+    "P047": {
+      "sha256": "57f109ec429a03d5e352961a46a2d360fb255522f40d48f8fa65be467d32c20d",
+      "scope": {"in_scope": true, "page": 1, "evidence": "Название и аннотация: Less Is More: Graph-free Multimodal RAG via Multi-signal Late Fusion"},
+      "metadata": {"title": {"value": "Less Is More: Graph-free Multimodal RAG via Multi-signal Late Fusion", "source": "Первый лист PDF, визуальная сверка скана"}, "authors": {"value": "Tithi Rakshit; Hongkuan Zhou; Lavdim Halilaj; Yuqicheng Zhu", "source": "Первый лист PDF, визуальная сверка скана"}, "year": {"value": "2026", "source": "Первый лист, выходные данные EMNLP Industry Track"}}
+    },
+    "P048": {
+      "sha256": "51ca6774c83a46de9ac5fa8cbe179e18a1f1f6f3a6fa5f652372aa8defd7e5b4",
+      "scope": {"in_scope": true, "page": 1, "evidence": "Название и аннотация: AGRAG: Advanced Graph-based Retrieval-Augmented Generation for LLMs"},
+      "metadata": {"title": {"value": "AGRAG: Advanced Graph-based Retrieval-Augmented Generation for LLMs", "source": "Метаданные PDF, Title"}, "authors": {"value": "Yubo Wang; Haoyang Li; Fei Teng; Lei Chen", "source": "Метаданные PDF, Author"}, "year": {"value": "2026", "source": "Первый лист PDF, arXiv:2511.05549v2 [cs.LG] 17 Mar 2026"}}
+    },
+    "P049": {
+      "sha256": "d78247635643e79d67a849367cee5fabea19dbad0a0bf5a672f4c06ffdbd4efa",
+      "scope": {"in_scope": true, "page": 1, "evidence": "Название и аннотация: Detecting Hallucinations in Retrieval-Augmented Generation via Semantic-level Internal Reasoning Graph"},
+      "metadata": {"title": {"value": "Detecting Hallucinations in Retrieval-Augmented Generation via Semantic-level Internal Reasoning Graph", "source": "Первый лист PDF"}, "authors": {"value": "Jianpeng Hu; Yanzeng Li; Jialun Zhong; Wenfa Qi; Lei Zou", "source": "Первый лист PDF"}, "year": {"value": "2026", "source": "Первый лист PDF, выходные данные"}}
+    },
+    "P050": {
+      "sha256": "b0acc24a7e3ce2f144d3f6cf6bce66512bfd9bd99afe672328219d3d766a6874",
+      "scope": {"in_scope": true, "page": 1, "evidence": "Название и аннотация: ReFilter: Improving Robustness of Retrieval-Augmented Generation via Gated Filter"},
+      "metadata": {"title": {"value": "ReFilter: Improving Robustness of Retrieval-Augmented Generation via Gated Filter", "source": "Метаданные PDF, Title"}, "authors": {"value": "Yixin Chen; Ying Xiong; Shangyu Wu; Xiangrui Ke; Nan Guan; Chun Jason Xue", "source": "Метаданные PDF, Author"}, "year": {"value": "2026", "source": "Первый лист PDF, arXiv:2602.12709v1 [cs.CL] 13 Feb 2026"}}
+    },
+    "P051": {
+      "sha256": "c33298acff66fcafcdd1b7ab334c0e3e89972ab0a4796e4284f57de4529883d8",
+      "scope": {"in_scope": true, "page": 1, "evidence": "Название и аннотация: RAG-TESTER: Automated End-to-End Testing of Retrieval-Augmented Large Language Models"},
+      "metadata": {"title": {"value": "RAG-TESTER: Automated End-to-End Testing of Retrieval-Augmented Large Language Models", "source": "Метаданные PDF, Title"}, "authors": {"value": "Ange Maiztegi; Jon Ayerdi; Miren Illarramendi; Aitor Arrieta", "source": "Метаданные PDF, Author"}, "year": {"value": "2026", "source": "Первый лист PDF, arXiv:2608.00054v1 [cs.AI] 26 Jul 2026"}}
+    },
+    "P052": {
+      "sha256": "b3cabd20e7e1ccd52747820c49aa0a2891d84a90f4d401e4f7cfc32d8d0458d9",
+      "scope": {"in_scope": true, "page": 6, "evidence": "Поисковый бенчмарк включает эксперимент генерации yes/no по первому найденному фрагменту правового корпуса."},
+      "metadata": {"title": {"value": "When the Correct Law Still Fails: A Diagnostic Benchmark for Law-in-Force Retrieval in Versioned Legal RAG", "source": "Первый лист PDF"}, "authors": {"value": "Yuchen Yao; Yiran Hu; Kaixiang Zhang; Yixin Su; Jiani Ge; Yun Liu", "source": "Первый лист PDF"}, "year": {"value": "2026", "source": "Первый лист PDF, выходные данные"}}
+    },
+    "P053": {
+      "sha256": "f2db67b2d0f21a1c71bfe773443b1f7b297bd6ba1148793c429eb975b03259ca",
+      "scope": {"in_scope": true, "page": 1, "evidence": "Название и аннотация: Enhancing RAG Efficiency with Adaptive Context Compression"},
+      "metadata": {"title": {"value": "Enhancing RAG Efficiency with Adaptive Context Compression", "source": "Первый лист PDF"}, "authors": {"value": "Shuyu Guo; Shuo Zhang; Zhaochun Ren", "source": "Первый лист PDF"}, "year": {"value": "2025", "source": "Первый лист PDF, выходные данные"}}
+    },
+    "P054": {
+      "sha256": "2a90068cafb0614bc48ca95f895503737c6f6433e4c120005b5cf4dba4995866",
+      "scope": {"in_scope": true, "page": 1, "evidence": "Название и аннотация: SF-RAG: Structure-Fidelity Retrieval-Augmented Generation for Academic Question Answering"},
+      "metadata": {"title": {"value": "SF-RAG: Structure-Fidelity Retrieval-Augmented Generation for Academic Question Answering", "source": "Первый лист PDF, визуальная сверка скана"}, "authors": {"value": "Rui Yu; Tianyi Wang; Ruixia Liu; Yinglong Wang", "source": "Первый лист PDF, визуальная сверка скана"}, "year": {"value": "2026", "source": "Первый лист, штамп arXiv:2602.13647v2 от 18 марта 2026"}}
+    },
+    "P055": {
+      "sha256": "929ba82e445159781f4c37c95138919fd08e524f49b063a67b3338cc572b4a9c",
+      "scope": {"in_scope": true, "page": 1, "evidence": "Пограничный случай. HyRAG пополняет графовую модель знаниями из внешней базы для прогноза узлов и связей."},
+      "metadata": {"title": {"value": "Generalizing Graph Foundation Models via Hyperbolic Retrieval-Augmented Generation", "source": "Метаданные PDF, Title"}, "authors": {"value": "Yifan Jin; Qirui Ji; Bin Qin; Jiangmeng Li; Lixiang Liu; Fuchun Sun; Changwen Zheng", "source": "Метаданные PDF, Author"}, "year": {"value": "2026", "source": "Первый лист PDF, выходные данные"}, "DOI": {"value": "10.1145/3770855.3817750", "source": "Первый лист PDF, выходные данные ACM и DOI https://doi.org/10.1145/3770855.3817750"}}
+    },
+    "P056": {
+      "sha256": "21a95a6a98731f0041daebb34b48c256d1154e4c823efdd71454b987889f76d7",
+      "scope": {"in_scope": true, "page": 1, "evidence": "Название и аннотация: Knowledge Pyramid Construction for Multi-Level Retrieval-Augmented Generation"},
+      "metadata": {"title": {"value": "Knowledge Pyramid Construction for Multi-Level Retrieval-Augmented Generation", "source": "Первый лист PDF, визуальная сверка скана"}, "authors": {"value": "Rubing Chen; Xulu Zhang; Jiaxin Wu; Wenqi Fan; Xiao-Yong Wei; Qing Li", "source": "Первый лист PDF, визуальная сверка скана"}, "year": {"value": "2025", "source": "Первый лист, штамп arXiv:2407.21276v3 от 21 февраля 2025"}}
+    },
+    "P057": {
+      "sha256": "c63a273f4539fd4ec3b76eb12dd01bad8d44b57040989b3aa19a39a2dcb0be58",
+      "scope": {"in_scope": true, "page": 1, "evidence": "Название и аннотация: From RAG to RICHES: Retrieval Interlaced with Sequence Generation"},
+      "metadata": {"title": {"value": "From RAG to RICHES: Retrieval Interlaced with Sequence Generation", "source": "Первый лист PDF"}, "authors": {"value": "Palak Jain; Livio Baldini Soares; Tom Kwiatkowski", "source": "Первый лист PDF"}, "year": {"value": "2024", "source": "Первый лист PDF, выходные данные"}}
+    },
+    "P058": {
+      "sha256": "0ce0fb76ae41f67fecafddb404d5f1a0df1ddd701fbedd95e7b865acac9f1deb",
+      "scope": {"in_scope": true, "page": 1, "evidence": "Название и аннотация: From Scenes to Elements: Multi-Granularity Evidence Retrieval for Verifiable Multimodal RAG"},
+      "metadata": {"title": {"value": "From Scenes to Elements: Multi-Granularity Evidence Retrieval for Verifiable Multimodal RAG", "source": "Первый лист PDF"}, "authors": {"value": "Guanhua Chen; Chuyue Huang; Yutong Yao; Shudong Liu; Xueqing Song; Lidia S. Chao; Derek F. Wong", "source": "Первый лист PDF"}, "year": {"value": "2026", "source": "Первый лист PDF, выходные данные"}}
+    },
+    "P059": {
+      "sha256": "4d5371be02c02d1c981ab6701592264d4b05b56b1127ac2d80de9b89bbfa6795",
+      "scope": {"in_scope": true, "page": 1, "evidence": "Название и аннотация: COUNTERMEM: Counterfactual Evaluation of Non-Parametric Memory Use in Retrieval-Augmented Generation"},
+      "metadata": {"title": {"value": "COUNTERMEM: Counterfactual Evaluation of Non-Parametric Memory Use in Retrieval-Augmented Generation", "source": "Первый лист PDF"}, "authors": {"value": "Mikhail Baklanov; Oren Barkan; Noam Koenigstein", "source": "Первый лист PDF"}, "year": {"value": "2026", "source": "Первый лист PDF, выходные данные"}}
+    },
+    "P060": {
+      "sha256": "c6160267231c23768682626e96759e2f67ad04ad1d38fe9c72953b72d8bd4780",
+      "scope": {"in_scope": true, "page": 1, "evidence": "Название и аннотация: Know Your RAG: Dataset Taxonomy and Generation Strategies for Evaluating RAG Systems"},
+      "metadata": {"title": {"value": "Know Your RAG: Dataset Taxonomy and Generation Strategies for Evaluating RAG Systems", "source": "Метаданные PDF, Title"}, "authors": {"value": "Rafael Teixeira de Lima; Shubham Gupta; Cesar Berrospi Ramis; Lokesh Mishra; Michele Dolfi; Peter Staar; Panagiotis Vagenas", "source": "Метаданные PDF, Author"}, "year": {"value": "2025", "source": "Первый лист PDF, выходные данные"}}
+    },
+    "P061": {
+      "sha256": "3d39e5b1970e26fb45895b18a4c18c5219200a4f17476f1cde60d6e74096f9c6",
+      "scope": {"in_scope": true, "page": 1, "evidence": "Название и аннотация: AttnComp: Attention-Guided Adaptive Context Compression for Retrieval-Augmented Generation"},
+      "metadata": {"title": {"value": "AttnComp: Attention-Guided Adaptive Context Compression for Retrieval-Augmented Generation", "source": "Первый лист PDF"}, "authors": {"value": "Lvzhou Luo; Yixuan Cao; Ping Luo", "source": "Первый лист PDF"}, "year": {"value": "2025", "source": "Первый лист PDF, выходные данные"}}
+    },
+    "P062": {
+      "sha256": "504d4a03bbec20c14c0d867828d27f7d52ae5b2f89bb13b492b7ae853165c1c0",
+      "scope": {"in_scope": true, "page": 1, "evidence": "Название и аннотация: CORAL: Adaptive Retrieval Loop for Culturally-Aligned Multilingual RAG"},
+      "metadata": {"title": {"value": "CORAL: Adaptive Retrieval Loop for Culturally-Aligned Multilingual RAG", "source": "Первый лист PDF"}, "authors": {"value": "Nayeon Lee; Jiwoo Song; Byeongcheol Kang", "source": "Первый лист PDF"}, "year": {"value": "2026", "source": "Запись издателя ACL Findings, совпадают заголовок и все авторы PDF: https://aclanthology.org/2026.findings-acl.1356/"}}
+    },
+    "P063": {
+      "sha256": "1bb0b2c301f47fac5f28dfa173ea898fdef7ec35cd6766bcc4afce7fdac65d23",
+      "scope": {"in_scope": true, "page": 1, "evidence": "Название и аннотация: FastV-RAG: Towards Fast and Fine-Grained Video QA with Retrieval-Augmented Generation"},
+      "metadata": {"title": {"value": "FastV-RAG: Towards Fast and Fine-Grained Video QA with Retrieval-Augmented Generation", "source": "Первый лист PDF, визуальная сверка скана"}, "authors": {"value": "Gen Li; Peiyu Liu", "source": "Первый лист PDF, визуальная сверка скана"}, "year": {"value": "2026", "source": "Первый лист, выходные данные ACL"}}
+    },
+    "P064": {
+      "sha256": "112b373c669e0a9a25bb645d9e45fa4c8d50bf9f4db7f8151c0825b545f543c2",
+      "scope": {"in_scope": true, "page": 1, "evidence": "Название и аннотация: SentGraph: Hierarchical Sentence Graph for Multi-hop Retrieval-Augmented Question Answering"},
+      "metadata": {"title": {"value": "SentGraph: Hierarchical Sentence Graph for Multi-hop Retrieval-Augmented Question Answering", "source": "Первый лист PDF, визуальная сверка скана"}, "authors": {"value": "Junli Liang; Pengfei Zhou; Wangqiu Zhou; Wenjie Qing; Qi Zhao; Ziwen Wang; Qi Song; Xiangyang Li", "source": "Первый лист PDF, визуальная сверка скана"}, "year": {"value": "2026", "source": "Первый лист, штамп arXiv:2601.03014v3 от 23 мая 2026"}}
+    },
+    "P065": {
+      "sha256": "89376561792359f5f8d8a54d1e33f3a9a271260611d199dfdb4ba2b2bff03714",
+      "scope": {"in_scope": true, "page": 1, "evidence": "Название и аннотация: Search-P1: Path-Centric Reward Shaping for Stable and Efficient Agentic RAG Training"},
+      "metadata": {"title": {"value": "Search-P1: Path-Centric Reward Shaping for Stable and Efficient Agentic RAG Training", "source": "Первый лист PDF, визуальная сверка скана"}, "authors": {"value": "Tianle Xia; Ming Xu; Lingxiang Hu; Yiding Sun; Wenwei Li; Linfang Shang; Liqun Liu; Peng Shu; Huan Yu; Jie Jiang", "source": "Первый лист PDF, визуальная сверка скана"}, "year": {"value": "2026", "source": "Первый лист, выходные данные ACL Industry Track"}}
+    },
+    "P066": {
+      "sha256": "ea48360c55c92b0fddaeb96769db9d5ca733f977f8d2380e80ab7ed39d3b1c53",
+      "scope": {"in_scope": true, "page": 1, "evidence": "Название и аннотация: ASTRID - An Automated and Scalable TRIaD for the Evaluation of RAG-based Clinical Question Answering Systems"},
+      "metadata": {"title": {"value": "ASTRID - An Automated and Scalable TRIaD for the Evaluation of RAG-based Clinical Question Answering Systems", "source": "Первый лист PDF"}, "authors": {"value": "Yajie Vera He; Mohita Chowdhury; Jared Joselowitz; Aisling Higham; Ernest Lim", "source": "Первый лист PDF"}, "year": {"value": "2025", "source": "Первый лист PDF, выходные данные"}}
+    },
+    "P067": {
+      "sha256": "0c4ae4c481b75d828973c2983f27224bc2a7ef2e6a64c4e4a112917485bc119c",
+      "scope": {"in_scope": true, "page": 1, "evidence": "Название и аннотация: Dynamic Context Adaptation for Consistent Role-Playing Agents with Retrieval-Augmented Generations"},
+      "metadata": {"title": {"value": "Dynamic Context Adaptation for Consistent Role-Playing Agents with Retrieval-Augmented Generations", "source": "Метаданные PDF, Title"}, "authors": {"value": "Jeiyoon Park; Yongshin Han; Minseop Kim; Kisu Yang", "source": "Метаданные PDF, Author"}, "year": {"value": "2026", "source": "Первый лист PDF, arXiv:2508.02016v4 [cs.AI] 5 Feb 2026"}}
+    },
+    "P068": {
+      "sha256": "c58b6757322622ce9c110ca5ef6144ba78ab90a06566fb5e1d635b59478b297e",
+      "scope": {"in_scope": true, "page": 1, "evidence": "Название и аннотация: VISA: Retrieval Augmented Generation with Visual Source Attribution"},
+      "metadata": {"title": {"value": "VISA: Retrieval Augmented Generation with Visual Source Attribution", "source": "Первый лист PDF"}, "authors": {"value": "Xueguang Ma; Shengyao Zhuang; Bevan Koopman; Guido Zuccon; Wenhu Chen; Jimmy Lin", "source": "Первый лист PDF"}, "year": {"value": "2025", "source": "Первый лист PDF, выходные данные"}}
+    },
+    "P069": {
+      "sha256": "091e446db4587cbe7cf5c21ceb781fa02aab5d9a0b636a2854f4c01e3e38e37f",
+      "scope": {"in_scope": true, "page": 1, "evidence": "Название и аннотация: GRAD: Generalizing RAG Adaptation with Decoding"},
+      "metadata": {"title": {"value": "GRAD: Generalizing RAG Adaptation with Decoding", "source": "Первый лист PDF"}, "authors": {"value": "Youngwon Lee; Seung-won Hwang; Zhewei Yao; Yuxiong He", "source": "Первый лист PDF"}, "year": {"value": "2026", "source": "Первый лист PDF, выходные данные"}}
+    },
+    "P070": {
+      "sha256": "d332a02388de9374326a4be664be17a64a2c9bd613096808134e1bd84f7c20c1",
+      "scope": {"in_scope": true, "page": 1, "evidence": "Название и аннотация: CacheGraft: Enhancing Retrieval-Augmented Generation via Latent-Space Document Enrichment"},
+      "metadata": {"title": {"value": "CacheGraft: Enhancing Retrieval-Augmented Generation via Latent-Space Document Enrichment", "source": "Метаданные PDF, Title"}, "authors": {"value": "Vihan Lakshman; Peter Baile Chen; Zhuohan Gu; Michael Cafarella", "source": "Метаданные PDF, Author"}, "year": {"value": "2026", "source": "Первый лист PDF, arXiv:2611.07393v2 [cs.IR] 6 Nov 2026"}}
+    },
+    "P071": {
+      "sha256": "4086025819e5ee8942b9d9108972a86200005c10fe14f7317fbb659aa5c13b90",
+      "scope": {"in_scope": true, "page": 1, "evidence": "Название и аннотация: From RAG to Agentic RAG for Faithful Islamic Question Answering"},
+      "metadata": {"title": {"value": "From RAG to Agentic RAG for Faithful Islamic Question Answering", "source": "Первый лист PDF"}, "authors": {"value": "Gagan Bhatia; Hamdy Mubarak; Mustafa Jarrar; George Mikros; Fadi Zaraket; Mahmoud Alhirthani; Mutaz Al-Khatib; Logan Cochrane; Kareem Darwish; Rashid Yahiaoui; Firoj Alam", "source": "Первый лист PDF"}, "year": {"value": "2026", "source": "Первый лист PDF, выходные данные"}}
+    },
+    "P072": {
+      "sha256": "a65b371f0c7218cdf685658e0678f8bcc8fa2967aa43e44660e3dcc9d286487b",
+      "scope": {"in_scope": true, "page": 1, "evidence": "Пограничный случай. Face4RAG оценивает фактическую согласованность китайских ответов RAG с контекстом."},
+      "metadata": {"title": {"value": "Face4RAG: Factual Consistency Evaluation for Retrieval Augmented Generation in Chinese", "source": "Метаданные PDF, Title"}, "authors": {"value": "Yunqi Xu; Tianchi Cai", "source": "Первый лист PDF"}, "year": {"value": "2024", "source": "Первый лист PDF, выходные данные"}, "DOI": {"value": "10.1145/3637528.3671656", "source": "Первый лист PDF, ACM Reference Format и DOI https://doi.org/10.1145/3637528.3671656"}}
+    },
+    "P073": {
+      "sha256": "84f48227670806c3569d94e50953a8a425b5d55cd83ff3c4efccca94750799f7",
+      "scope": {"in_scope": true, "page": 1, "evidence": "Название и аннотация: Decoding the Market’s Pulse: Context-Enriched Agentic Retrieval Augmented Generation for Predicting Post-Earnings Price Shocks"},
+      "metadata": {"title": {"value": "Decoding the Market’s Pulse: Context-Enriched Agentic Retrieval Augmented Generation for Predicting Post-Earnings Price Shocks", "source": "Первый лист PDF"}, "authors": {"value": "Chenhui Li; Weihai Lu", "source": "Первый лист PDF"}, "year": {"value": "2026", "source": "Первый лист PDF, выходные данные"}}
+    },
+    "P074": {
+      "sha256": "148d596bdd3799187585b4497c26412383adc4942d5267015d773d58936174a7",
+      "scope": {"in_scope": true, "page": 1, "evidence": "Название и аннотация: Progressive Re-ranking for Multimodal Retrieval-Augmented Generation via Curriculum Learning"},
+      "metadata": {"title": {"value": "Progressive Re-ranking for Multimodal Retrieval-Augmented Generation via Curriculum Learning", "source": "Первый лист PDF"}, "authors": {"value": "Zhu Min; Yanchao Hao; Jian Liu; Shizhu He; Xi Chen", "source": "Первый лист PDF"}, "year": {"value": "2026", "source": "Первый лист PDF, выходные данные"}}
+    },
+    "P075": {
+      "sha256": "db152bb2de18c1f4d8a965f0611a8a963465f099463042267ac90a665d81a0b8",
+      "scope": {"in_scope": true, "page": 1, "evidence": "Гиперболический поиск оценивают в RAGBench по релевантности контекста и ответа."},
+      "metadata": {"title": {"value": "HypRAG: Hyperbolic Dense Retrieval for Retrieval Augmented Generation", "source": "Первый лист PDF, визуальная сверка скана"}, "authors": {"value": "Hiren Madhu; Ngoc Bui; Ali Maatouk; Leandros Tassiulas; Smita Krishnaswamy; Menglin Yang; Sukanta Ganguly; Kiran Srinivasan; Rex Ying", "source": "Первый лист PDF, визуальная сверка скана"}, "year": {"value": "2026", "source": "Первый лист, выходные данные ICML/PMLR"}}
+    },
+    "P076": {
+      "sha256": "d0e89b5f7185c38391c7146d1e7ce7d48a67fcbac859c7ea1e2babc5015ae648",
+      "scope": {"in_scope": true, "page": 1, "evidence": "Название и аннотация: RankCoT: Refining Knowledge for Retrieval-Augmented Generation through Ranking Chain-of-Thoughts"},
+      "metadata": {"title": {"value": "RankCoT: Refining Knowledge for Retrieval-Augmented Generation through Ranking Chain-of-Thoughts", "source": "Первый лист PDF"}, "authors": {"value": "Mingyan Wu; Zhenghao Liu; Yukun Yan; Xinze Li; Shi Yu; Zheni Zeng; Yu Gu; Ge Yu", "source": "Первый лист PDF"}, "year": {"value": "2025", "source": "Первый лист PDF, выходные данные"}}
+    },
+    "P077": {
+      "sha256": "2d6ca6e8bb4e65d3a4775d94551692c355091754d390be37f230d489b63780f0",
+      "scope": {"in_scope": true, "page": 1, "evidence": "Название и аннотация: LEGO-GraphRAG: Modularizing Graph-based Retrieval-Augmented Generation for Design Space Exploration"},
+      "metadata": {"title": {"value": "LEGO-GraphRAG: Modularizing Graph-based Retrieval-Augmented Generation for Design Space Exploration", "source": "Метаданные PDF, Title"}, "authors": {"value": "Yukun Cao; Zengyi Gao; Zhiyang Li; Xike Xie; S. Kevin Zhou; Jianliang Xu", "source": "Метаданные PDF, Author"}, "year": {"value": "2025", "source": "Первый лист, библиографическая ссылка PVLDB 18(10)"}, "DOI": {"value": "10.14778/3748191.3748194", "source": "Первый лист PDF, PVLDB Reference Format, doi:10.14778/3748191.3748194"}}
+    },
+    "P078": {
+      "sha256": "1d20d79b57bddd417009330c534e6045cd07e361d0481216d92e404e7e0e724e",
+      "scope": {"in_scope": true, "page": 1, "evidence": "Название и аннотация: PRISM-RAG: Multimodal Hypergraph Retrieval-Augmented Generation for Tobacco Product and Legislative Policy Reasoning"},
+      "metadata": {"title": {"value": "PRISM-RAG: Multimodal Hypergraph Retrieval-Augmented Generation for Tobacco Product and Legislative Policy Reasoning", "source": "Метаданные PDF, Title"}, "authors": {"value": "Manuel Serna-Aguilera; Raegan Anderes; Page Dobbs; Khoa Luu", "source": "Метаданные PDF, Author"}, "year": {"value": "2026", "source": "Первый лист PDF, arXiv:2609.23769v1 [cs.CV] 20 Sep 2026"}}
+    },
+    "P079": {
+      "sha256": "857451f20498a1a0ab5c698f3477e36b1146bcaef7eb7abc3c0cb1258d7979d6",
+      "scope": {"in_scope": true, "page": 1, "evidence": "Название и аннотация: Multi-Field Hybrid Retrieval-Augmented Generation for Maritime Accident Root Cause Analysis"},
+      "metadata": {"title": {"value": "Multi-Field Hybrid Retrieval-Augmented Generation for Maritime Accident Root Cause Analysis", "source": "Метаданные PDF, Title"}, "authors": {"value": "Seongjin Kim; Sungil Kim", "source": "Метаданные PDF, Author"}, "year": {"value": "2026", "source": "Первый лист PDF, arXiv:2606.13249v1 [cs.AI] 11 Jun 2026"}}
+    },
+    "P080": {
+      "sha256": "8b4378dc2a0fc229dee831cfe40477707beccc9cb12c6f7455e93b0299a0c0c8",
+      "scope": {"in_scope": true, "page": 1, "evidence": "Название и аннотация: RAG over Tables: Hierarchical Memory Index, Multi-Stage Retrieval, and Benchmarking"},
+      "metadata": {"title": {"value": "RAG over Tables: Hierarchical Memory Index, Multi-Stage Retrieval, and Benchmarking", "source": "Первый лист PDF"}, "authors": {"value": "Jiaru Zou; Dongqi Fu; Sirui Chen; Xinrui He; Zihao Li; Yada Zhu; Jiawei Han; Jingrui He", "source": "Первый лист PDF"}, "year": {"value": "2026", "source": "Первый лист PDF, выходные данные"}}
+    },
+    "P081": {
+      "sha256": "652b74465f863c4ecb762330f9a2863ce8a972c8933b7961a0312c423f449dc9",
+      "scope": {"in_scope": true, "page": 1, "evidence": "Название и аннотация: MedRAG: Enhancing Retrieval-augmented Generation with Knowledge Graph-Elicited Reasoning for Healthcare Copilot"},
+      "metadata": {"title": {"value": "MedRAG: Enhancing Retrieval-augmented Generation with Knowledge Graph-Elicited Reasoning for Healthcare Copilot", "source": "Метаданные PDF, Title"}, "authors": {"value": "Xuejiao Zhao; Siyan Liu; Su-Yin Yang; Chunyan Miao", "source": "Метаданные PDF, Author"}, "year": {"value": "2025", "source": "Первый лист PDF, arXiv:2502.04413v2 [cs.CL] 27 Jun 2025"}}
+    },
+    "P082": {
+      "sha256": "bea4b291622ecce05d411994fba8488c315c10112a4a17321fb93648451796ce",
+      "scope": {"in_scope": true, "page": 1, "evidence": "Название и аннотация: Unifying Ranking and Generation in Query Auto-Completion via Retrieval-Augmented Generation and Multi-Objective Alignment"},
+      "metadata": {"title": {"value": "Unifying Ranking and Generation in Query Auto-Completion via Retrieval-Augmented Generation and Multi-Objective Alignment", "source": "Первый лист PDF, визуальная сверка скана"}, "authors": {"value": "Kai Yuan; Anthony Zheng; Jia Hu; Divyanshu Sheth; Hemanth Velaga; Kylee Kim; Matteo Guarrera; Besim Avcil; Xuetao Yin; Jianhua Li; Rajyashree Mukherjee; Sean Suchter", "source": "Первый лист PDF, визуальная сверка скана"}, "year": {"value": "2026", "source": "Первый лист, штамп arXiv:2602.01023v4 от 14 февраля 2026"}}
+    },
+    "P083": {
+      "sha256": "a672832593cbae64e146dcde11e40959e5bfa06bb582b76f175883d3d8980b25",
+      "scope": {"in_scope": true, "page": 1, "evidence": "Название и аннотация: Automated Evidence Extraction and Scoring for Corporate Climate Policy Engagement: A Multilingual RAG Approach"},
+      "metadata": {"title": {"value": "Automated Evidence Extraction and Scoring for Corporate Climate Policy Engagement: A Multilingual RAG Approach", "source": "Первый лист PDF"}, "authors": {"value": "Imene Kolli; Ario Saeid Vaghefi; Chiara Colesanti Senni; Shantam Raj; Markus Leippold", "source": "Первый лист PDF"}, "year": {"value": "2025", "source": "Первый лист PDF, выходные данные"}}
+    },
+    "P084": {
+      "sha256": "202085cc926a85aa31112befb1eacebdd5fe2955ee16d29039ac9a8406c5a31d",
+      "scope": {"in_scope": true, "page": 1, "evidence": "Название и аннотация: Reframe to Retrieve: Cognition-aware RAG with Projections Inspired by Appraisal and CBT for Conversational Mental Health Support"},
+      "metadata": {"title": {"value": "Reframe to Retrieve: Cognition-aware RAG with Projections Inspired by Appraisal and CBT for Conversational Mental Health Support", "source": "Первый лист PDF"}, "authors": {"value": "Minh-Tien Nguyen; Huu-Loi Le; Manh-Cuong Phan; Duong-Hieu Le; Dinh-Phuc Pham; Van-Quyet Nguyen; Hajime Hotta", "source": "Первый лист PDF"}, "year": {"value": "2026", "source": "Первый лист PDF, выходные данные"}}
+    },
+    "P085": {
+      "sha256": "5bebdbe4b52f213eed8a3ef45775598d85f799f1b2f0028861591dd514703062",
+      "scope": {"in_scope": true, "page": 1, "evidence": "Название и аннотация: SafeRAG: Benchmarking Security in Retrieval-Augmented Generation of Large Language Model"},
+      "metadata": {"title": {"value": "SafeRAG: Benchmarking Security in Retrieval-Augmented Generation of Large Language Model", "source": "Первый лист PDF"}, "authors": {"value": "Xun Liang; Simin Niu; Zhiyu Li; Sensen Zhang; Hanyu Wang; Feiyu Xiong; Jason Zhaoxin Fan; Bo Tang; Jihao Zhao; Jiawei Yang; Shichao Song; Mengwei Wang", "source": "Первый лист PDF"}, "year": {"value": "2025", "source": "Первый лист PDF, выходные данные"}}
+    },
+    "P086": {
+      "sha256": "217b57642aa4c459b9550d79c4dfb9d2b9d277eb51686b303291acac661c1f40",
+      "scope": {"in_scope": true, "page": 1, "evidence": "В языковую модель для прогнозирования подаются извлечённые факты временного графа и результаты веб-поиска."},
+      "metadata": {"title": {"value": "Retrieval-Augmented Generation Meets Data-Driven Tabula Rasa Approach for Temporal Knowledge Graph Forecasting", "source": "Метаданные PDF, Title"}, "authors": {"value": "Geethan Sannidhi; Sagar Srinivas Sakhinana; Venkataramana Runkana", "source": "Первый лист PDF"}, "year": {"value": "2024", "source": "Первый лист PDF, arXiv:2408.13273v1 [cs.CL] 18 Aug 2024"}}
+    },
+    "P087": {
+      "sha256": "4bc799b230bf1367f594ec0faaa04102ce03734bfa8f740feb78944c5b31b20f",
+      "scope": {"in_scope": true, "page": 1, "evidence": "Название и аннотация: Self-Correcting RAG: Enhancing Faithfulness via MMKP Context Selection and NLI-Guided MCTS"},
+      "metadata": {"title": {"value": "Self-Correcting RAG: Enhancing Faithfulness via MMKP Context Selection and NLI-Guided MCTS", "source": "Первый лист PDF"}, "authors": {"value": "Shijia Xu; Zhou Wu; Xiaolong Jia; Yu Wang; Kai Liu; April Xiaowen Dong", "source": "Первый лист PDF"}, "year": {"value": "2026", "source": "Первый лист PDF, выходные данные"}}
+    },
+    "P088": {
+      "sha256": "730bd111a427159ae6343d76e0ac00ed42efb48abd4c5bd94afec4234a1ba959",
+      "scope": {"in_scope": true, "page": 1, "evidence": "Название и аннотация: RAG Safety: Exploring Knowledge Poisoning Attacks to Retrieval-Augmented Generation"},
+      "metadata": {"title": {"value": "RAG Safety: Exploring Knowledge Poisoning Attacks to Retrieval-Augmented Generation", "source": "Метаданные PDF, Title"}, "authors": {"value": "Tianzhe Zhao; Jiaoyan Chen; Yanchi Ru; Haiping Zhu; Nan Hu; Jun Liu; Qika Lin", "source": "Метаданные PDF, Author"}, "year": {"value": "2025", "source": "Первый лист PDF, arXiv:2507.08862v1 [cs.CR] 9 Jul 2025"}}
+    },
+    "P089": {
+      "sha256": "6e1dc716dff43378444739b43bc5fac174f2fa9e4a9333c0190a79793b88dddd",
+      "scope": {"in_scope": true, "page": 1, "evidence": "Название и аннотация: RaFe: Ranking Feedback Improves Query Rewriting for RAG"},
+      "metadata": {"title": {"value": "RaFe: Ranking Feedback Improves Query Rewriting for RAG", "source": "Первый лист PDF"}, "authors": {"value": "Shengyu Mao; Yong Jiang; Boli Chen; Xiao Li; Peng Wang; Xinyu Wang; Pengjun Xie; Fei Huang; Huajun Chen; Ningyu Zhang", "source": "Первый лист PDF"}, "year": {"value": "2024", "source": "Первый лист PDF, выходные данные"}}
+    },
+    "P090": {
+      "sha256": "7933f76f2debf18c81f9f22f57e21cc3a4ee1d0155b207aa14249cc350dd6ad1",
+      "scope": {"in_scope": true, "page": 1, "evidence": "Название и аннотация: Pandora’s Box or Aladdin’s Lamp: A Comprehensive Analysis Revealing the Role of RAG Noise in Large Language Models"},
+      "metadata": {"title": {"value": "Pandora’s Box or Aladdin’s Lamp: A Comprehensive Analysis Revealing the Role of RAG Noise in Large Language Models", "source": "Первый лист PDF"}, "authors": {"value": "Jinyang Wu; Shuai Zhang; Feihu Che; Mingkuan Feng; Pengpeng Shao; Jianhua Tao", "source": "Первый лист PDF"}, "year": {"value": "2025", "source": "Первый лист PDF, выходные данные"}}
+    }
+  }
+}

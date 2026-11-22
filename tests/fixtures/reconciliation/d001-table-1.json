@@ -1,0 +1,233 @@
+{
+  "source": {
+    "sha256": "7fcbb21b0bdf5bb222b347d0b5e8d6587aa8af5c5f855f62322d0d7ad5427d3c"
+  },
+  "table": 1,
+  "page": 6,
+  "evidence": [
+    {
+      "id": "docling-0-1",
+      "page": 6,
+      "text": "LLaMA3-8B-Instruct",
+      "box": [
+        0.2556178244667444,
+        0.08717575346066415,
+        0.4471055656405781,
+        0.09963067827485667
+      ],
+      "precision": "cell"
+    },
+    {
+      "id": "docling-0-7",
+      "page": 6,
+      "text": "Qwen3.5 plus",
+      "box": [
+        0.4861561545583509,
+        0.0874145298338341,
+        0.6502929490099241,
+        0.09901297483210691
+      ],
+      "precision": "cell"
+    },
+    {
+      "id": "docling-6-7",
+      "page": 6,
+      "text": ".442",
+      "box": [
+        0.43097023110817495,
+        0.17532880931480613,
+        0.4586404813862021,
+        0.18623681400975658
+      ],
+      "precision": "cell"
+    },
+    {
+      "id": "docling-18-1",
+      "page": 6,
+      "text": ".422",
+      "box": [
+        0.20201243273186673,
+        0.32921520814280647,
+        0.23441067419635345,
+        0.34016144791220787
+      ],
+      "precision": "cell"
+    },
+    {
+      "id": "docling-18-7",
+      "page": 6,
+      "text": ".586",
+      "box": [
+        0.4318360751454401,
+        0.3288787984062441,
+        0.461308776666245,
+        0.3400550688182062
+      ],
+      "precision": "cell"
+    },
+    {
+      "id": "7fcbb21b0bdf-p6-text-13",
+      "page": 6,
+      "text": "4.1 Experimental Setup\nDatasets & Metrics.We evaluate ThreadRAG on\nthree standard open-domain multi-hop QA bench-\nmarks: HotpotQA (Yang et al., 2018), 2WikiMul-\ntihopQA (Ho et al., 2020), and MuSiQue (Trivedi\net al., 2022). We use the same data splits as previ-\nous works (Trivedi et al., 2023; Li and Du, 2023)\nfor evaluation. Following IRCoT (Trivedi et al.,\n2023), our retrieval corpus aggregates all support-\ning and distractor passages to simulate a realistic\nopen-domain setting. For evaluation, we report\nExact Match (EM) and F1 scores to measure abso-\nlute correctness and token-level overlap, applying\nstandard text normalization to both predictions and\nground-truth answers prior to computation.",
+      "box": [
+        0.119031,
+        0.42195,
+        0.488765,
+        0.66412
+      ],
+      "precision": "text_fragment"
+    },
+    {
+      "id": "7fcbb21b0bdf-p6-text-16",
+      "page": 6,
+      "text": "Implementation Details. We use Llama-3-8B\n(Grattafiori et al., 2024), Qwen-3.5-Plus (Yang\net al., 2025), and GPT-4o-mini (OpenAI et al.,\n2024) with nomic-embed-text for embeddings\n(Nussbaum et al., 2024). Chunk size is 1200 charac-\nters with 150 overlap. We retrieve top-5 global con-\ntexts via Elasticsearch using equal BM25 and dense\nweights. STG settings are: 5-NN, 0.5/0.3 seman-\ntic/lexical thresholds, and edge weights γ = 0.3,\nα = 0.35, β = 0.65. Pathfinding parameters are:\n3 anchors, 0.5 PPR restart, 0.01 pruning threshold,\nand 3 max iterations. All experiments run on 4\nNVIDIA A6000 GPUs.",
+      "box": [
+        0.513629,
+        0.447378,
+        0.884024,
+        0.653472
+      ],
+      "precision": "text_fragment"
+    }
+  ],
+  "results": [
+    {
+      "method": "IRCoT",
+      "generator": "Qwen3.5 plus",
+      "dataset": "HotpotQA",
+      "metric": "EM",
+      "task": "open-domain multi-hop question answering",
+      "experiment": "Table 1: Main results of multi-hop QA datasets. Best results are in bold and second best are underlined.",
+      "protocol": "Datasets & Metrics.We evaluate ThreadRAG on three standard open-domain multi-hop QA benchmarks: HotpotQA (Yang et al., 2018), 2WikiMultihopQA (Ho et al., 2020), and MuSiQue (Trivedi et al., 2022). We use the same data splits as previous works (Trivedi et al., 2023; Li and Du, 2023) for evaluation. Following IRCoT (Trivedi et al., 2023), our retrieval corpus aggregates all supporting and distractor passages to simulate a realistic open-domain setting. For evaluation, we report Exact Match (EM) and F1 scores to measure absolute correctness and token-level overlap, applying standard text normalization to both predictions and ground-truth answers prior to computation.",
+      "raw_value": ".442",
+      "value": "0.442",
+      "unit": "fraction",
+      "statistic": null,
+      "retrieval_top_k": null,
+      "source": {
+        "page": 6,
+        "table": 1,
+        "row": 6,
+        "column": 7,
+        "headers": [
+          "Qwen3.5 plus",
+          "HotpotQA",
+          "EM"
+        ],
+        "box": [
+          0.43097023110817495,
+          0.17532880931480613,
+          0.4586404813862021,
+          0.18623681400975658
+        ],
+        "evidence_ids": [
+          "docling-6-7"
+        ],
+        "figure": null,
+        "cell_id": "cell-6-7"
+      },
+      "condition_sources": {
+        "generator": [
+          "docling-0-7"
+        ]
+      },
+      "components": {},
+      "id": "result-42"
+    },
+    {
+      "method": "ThreadRAG",
+      "generator": "LLaMA3-8B-Instruct",
+      "dataset": "HotpotQA",
+      "metric": "EM",
+      "task": "open-domain multi-hop question answering",
+      "experiment": "Table 1: Main results of multi-hop QA datasets. Best results are in bold and second best are underlined.",
+      "protocol": "Datasets & Metrics.We evaluate ThreadRAG on three standard open-domain multi-hop QA benchmarks: HotpotQA (Yang et al., 2018), 2WikiMultihopQA (Ho et al., 2020), and MuSiQue (Trivedi et al., 2022). We use the same data splits as previous works (Trivedi et al., 2023; Li and Du, 2023) for evaluation. Following IRCoT (Trivedi et al., 2023), our retrieval corpus aggregates all supporting and distractor passages to simulate a realistic open-domain setting. For evaluation, we report Exact Match (EM) and F1 scores to measure absolute correctness and token-level overlap, applying standard text normalization to both predictions and ground-truth answers prior to computation.",
+      "raw_value": ".422",
+      "value": "0.422",
+      "unit": "fraction",
+      "statistic": null,
+      "retrieval_top_k": 5,
+      "source": {
+        "page": 6,
+        "table": 1,
+        "row": 18,
+        "column": 1,
+        "headers": [
+          "LLaMA3-8B-Instruct",
+          "HotpotQA",
+          "EM"
+        ],
+        "box": [
+          0.20201243273186673,
+          0.32921520814280647,
+          0.23441067419635345,
+          0.34016144791220787
+        ],
+        "evidence_ids": [
+          "docling-18-1"
+        ],
+        "figure": null,
+        "cell_id": "cell-18-1"
+      },
+      "condition_sources": {
+        "generator": [
+          "docling-0-1"
+        ],
+        "retrieval_top_k": [
+          "7fcbb21b0bdf-p6-text-16",
+          "7fcbb21b0bdf-p6-text-13"
+        ]
+      },
+      "components": {},
+      "id": "result-234"
+    },
+    {
+      "method": "ThreadRAG",
+      "generator": "Qwen3.5 plus",
+      "dataset": "HotpotQA",
+      "metric": "EM",
+      "task": "open-domain multi-hop question answering",
+      "experiment": "Table 1: Main results of multi-hop QA datasets. Best results are in bold and second best are underlined.",
+      "protocol": "Datasets & Metrics.We evaluate ThreadRAG on three standard open-domain multi-hop QA benchmarks: HotpotQA (Yang et al., 2018), 2WikiMultihopQA (Ho et al., 2020), and MuSiQue (Trivedi et al., 2022). We use the same data splits as previous works (Trivedi et al., 2023; Li and Du, 2023) for evaluation. Following IRCoT (Trivedi et al., 2023), our retrieval corpus aggregates all supporting and distractor passages to simulate a realistic open-domain setting. For evaluation, we report Exact Match (EM) and F1 scores to measure absolute correctness and token-level overlap, applying standard text normalization to both predictions and ground-truth answers prior to computation.",
+      "raw_value": ".586",
+      "value": "0.586",
+      "unit": "fraction",
+      "statistic": null,
+      "retrieval_top_k": 5,
+      "source": {
+        "page": 6,
+        "table": 1,
+        "row": 18,
+        "column": 7,
+        "headers": [
+          "Qwen3.5 plus",
+          "HotpotQA",
+          "EM"
+        ],
+        "box": [
+          0.4318360751454401,
+          0.3288787984062441,
+          0.461308776666245,
+          0.3400550688182062
+        ],
+        "evidence_ids": [
+          "docling-18-7"
+        ],
+        "figure": null,
+        "cell_id": "cell-18-7"
+      },
+      "condition_sources": {
+        "generator": [
+          "docling-0-7"
+        ],
+        "retrieval_top_k": [
+          "7fcbb21b0bdf-p6-text-16",
+          "7fcbb21b0bdf-p6-text-13"
+        ]
+      },
+      "components": {},
+      "id": "result-240"
+    }
+  ],
+  "remarks": []
+}

@@ -1,0 +1,89 @@
+{
+  "document": "D009.pdf",
+  "sha256": "8fd9ce01afa9c483a4e7b60f4d69ff97e61df96e1611fd7bddb5a80c94714145",
+  "page": 5,
+  "table": 1,
+  "baseline_groups": {"Zero-shot": true, "Advanced": true, "RL-based": true, "Ours": false},
+  "grid": {
+    "label": "Table 1",
+    "rows": 13,
+    "columns": 3,
+    "caption_evidence_id": "caption",
+    "cells": [
+      {"row": 0, "column": 0, "text": "Type", "row_span": 2, "role": "column_header"},
+      {"row": 0, "column": 1, "text": "Method", "row_span": 2, "role": "column_header"},
+      {"row": 0, "column": 2, "text": "HotpotQA", "role": "column_header"},
+      {"row": 1, "column": 2, "text": "EM", "role": "column_header"},
+      {"row": 2, "column": 0, "text": "Zero-shot", "row_span": 2, "role": "row_header"},
+      {"row": 2, "column": 1, "text": "Direct", "role": "row_header"},
+      {"row": 2, "column": 2, "text": "18.7", "role": "data", "evidence_ids": ["cell-direct"]},
+      {"row": 3, "column": 1, "text": "Standard RAG", "role": "row_header"},
+      {"row": 3, "column": 2, "text": "31.6", "role": "data", "evidence_ids": ["cell-standard-rag"]},
+      {"row": 4, "column": 0, "text": "Advanced", "row_span": 4, "role": "row_header"},
+      {"row": 4, "column": 1, "text": "FLARE", "role": "row_header"},
+      {"row": 4, "column": 2, "text": "18.8", "role": "data", "evidence_ids": ["cell-flare"]},
+      {"row": 5, "column": 1, "text": "Self-RAG", "role": "row_header"},
+      {"row": 5, "column": 2, "text": "18.2", "role": "data", "evidence_ids": ["cell-self-rag"]},
+      {"row": 6, "column": 1, "text": "IRCoT", "role": "row_header"},
+      {"row": 6, "column": 2, "text": "31.2", "role": "data", "evidence_ids": ["cell-ircot"]},
+      {"row": 7, "column": 1, "text": "Search-o1", "role": "row_header"},
+      {"row": 7, "column": 2, "text": "18.5", "role": "data", "evidence_ids": ["cell-search-o1"]},
+      {"row": 8, "column": 0, "text": "RL-based", "row_span": 4, "role": "row_header"},
+      {"row": 8, "column": 1, "text": "AutoRAG", "role": "row_header"},
+      {"row": 8, "column": 2, "text": "14.8", "role": "data", "evidence_ids": ["cell-auto-rag"]},
+      {"row": 9, "column": 1, "text": "Search-R1", "role": "row_header"},
+      {"row": 9, "column": 2, "text": "37.9", "role": "data", "evidence_ids": ["cell-search-r1"]},
+      {"row": 10, "column": 1, "text": "ReasonRAG", "role": "row_header"},
+      {"row": 10, "column": 2, "text": "36.4", "role": "data", "evidence_ids": ["cell-reason-rag"]},
+      {"row": 11, "column": 1, "text": "StepSearch", "role": "row_header"},
+      {"row": 11, "column": 2, "text": "38.7", "role": "data", "evidence_ids": ["cell-step-search"]},
+      {"row": 12, "column": 0, "text": "Ours", "role": "row_header"},
+      {"row": 12, "column": 1, "text": "PRO-STEP", "role": "row_header"},
+      {"row": 12, "column": 2, "text": "38.7", "role": "data", "evidence_ids": ["cell-pro-step"]}
+    ]
+  },
+  "context_evidence_ids": ["qa-task"],
+  "assertions": [
+    {"field": "generator", "value": "Qwen2.5-7B-Instruct", "scope": "PRO-STEP and most baselines", "evidence_id": "qwen"},
+    {"field": "generator", "value": "Llama-2-13B", "scope": "Self-RAG", "evidence_id": "self-rag-model"},
+    {"field": "generator", "value": "Llama-3-8B-Instruct", "scope": "AutoRAG", "evidence_id": "auto-rag-model"},
+    {"field": "retrieval_top_k", "value": 3, "scope": "all methods", "evidence_id": "top-k"}
+  ],
+  "evidence": [
+    {"id": "cell-direct", "page": 5, "text": "18.7", "box": [0.411797, 0.201846, 0.439598, 0.213078], "precision": "cell"},
+    {"id": "cell-standard-rag", "page": 5, "text": "31.6", "box": [0.411797, 0.217192, 0.439598, 0.228424], "precision": "cell"},
+    {"id": "cell-flare", "page": 5, "text": "18.8", "box": [0.411797, 0.238408, 0.439598, 0.249641], "precision": "cell"},
+    {"id": "cell-self-rag", "page": 5, "text": "18.2", "box": [0.411797, 0.253754, 0.439598, 0.264987], "precision": "cell"},
+    {"id": "cell-ircot", "page": 5, "text": "31.2", "box": [0.411797, 0.269100, 0.439598, 0.280333], "precision": "cell"},
+    {"id": "cell-search-o1", "page": 5, "text": "18.5", "box": [0.411797, 0.284446, 0.439598, 0.295679], "precision": "cell"},
+    {"id": "cell-auto-rag", "page": 5, "text": "14.8", "box": [0.411797, 0.305661, 0.439598, 0.316894], "precision": "cell"},
+    {"id": "cell-search-r1", "page": 5, "text": "37.9", "box": [0.411801, 0.321008, 0.439602, 0.332240], "precision": "cell"},
+    {"id": "cell-reason-rag", "page": 5, "text": "36.4", "box": [0.411797, 0.336354, 0.439598, 0.347586], "precision": "cell"},
+    {"id": "cell-step-search", "page": 5, "text": "38.7", "box": [0.411797, 0.352375, 0.439598, 0.363607], "precision": "cell"},
+    {"id": "cell-pro-step", "page": 5, "text": "38.7", "box": [0.411801, 0.373590, 0.439602, 0.384823], "precision": "cell"},
+    {
+      "id": "caption", "page": 5, "box": [0.118, 0.085, 0.881, 0.098], "precision": "text_fragment",
+      "text": "Table 1: Comparison of different RAG methods across 5 benchmarks using EM and F1 metrics."
+    },
+    {
+      "id": "qa-task", "page": 5, "box": [0.118, 0.510, 0.489, 0.557], "precision": "text_fragment",
+      "text": "We evaluate PRO-STEP on five benchmark datasets spanning single-hop and multi-hop question answering (QA)."
+    },
+    {
+      "id": "qwen", "page": 5, "box": [0.118, 0.682, 0.490, 0.731], "precision": "text_fragment",
+      "text": "We employ Qwen2.5-7B-Instruct (Qwen Team, 2024) as the primary backbone for PRO-STEP and most baselines."
+    },
+    {
+      "id": "self-rag-model", "page": 5, "box": [0.118, 0.747, 0.490, 0.793], "precision": "text_fragment",
+      "text": "Self-RAG employs its specialized Llama-2-13B variant (Asai et al., 2024)"
+    },
+    {
+      "id": "auto-rag-model", "page": 5, "box": [0.118, 0.778, 0.490, 0.811], "precision": "text_fragment",
+      "text": "AutoRAG utilizes Llama-3-8B-Instruct (Yu et al., 2024)."
+    },
+    {
+      "id": "top-k", "page": 5, "box": [0.118, 0.843, 0.490, 0.890], "precision": "text_fragment",
+      "text": "set the number of retrieved passages to k = 3 across all methods to ensure consistency."
+    }
+  ]
+}

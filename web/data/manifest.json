@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "publicationId": "publication-d001",
+  "pdfId": "pdf-7fcbb21b0bdf5bb222b347d0b5e8d6587aa8af5c5f855f62322d0d7ad5427d3c",
+  "runId": "run-d001-table1-saved-20261120",
+  "document": "D001.pdf",
+  "pdfSha256": "7fcbb21b0bdf5bb222b347d0b5e8d6587aa8af5c5f855f62322d0d7ad5427d3c",
+  "snapshotSha256": "d30a8a9a80d368a5627a38517eb4095b460fe259d12d480c7c75a9b50650e01f",
+  "provenance": {
+    "kind": "saved-extraction",
+    "description": "Saved Python MVP extraction of D001.pdf, page 6, Table 1; not a gold standard.",
+    "processorVersion": null
+  }
+}

@@ -1,0 +1,791 @@
+{
+  "document": "D021.pdf",
+  "page": 11,
+  "table": 1,
+  "strategy": "unstructured",
+  "versions": {
+    "python": "3.12.3",
+    "pypdfium2": "5.15.2",
+    "unstructured-python": "3.12.3",
+    "tesseract": "5.3.4",
+    "unstructured": "0.18.32",
+    "unstructured-inference": "1.2.0",
+    "torch": "2.8.0+cpu",
+    "torchvision": "0.23.0+cpu",
+    "transformers": "5.23.0",
+    "onnxruntime": "1.32.0",
+    "pillow": "13.0.0",
+    "unstructured-pytesseract": "0.3.15"
+  },
+  "settings": {
+    "strategy": "hi_res",
+    "infer_table_structure": true,
+    "starting_page_number": 11,
+    "languages": [
+      "eng"
+    ],
+    "hi_res_model_name": "yolox_quantized",
+    "pdf_image_dpi": 350,
+    "ocr_agent": "unstructured.partition.utils.ocr_models.tesseract_ocr.OCRAgentTesseract",
+    "table_ocr_agent": "unstructured.partition.utils.ocr_models.tesseract_ocr.OCRAgentTesseract",
+    "EXTRACT_TABLE_AS_CELLS": true,
+    "TABLE_IMAGE_CROP_PAD": 16,
+    "TABLE_TESSERACT_PSM": 6,
+    "cpu_threads": 4,
+    "hf_hub_offline": true
+  },
+  "elapsed_ms": 16563,
+  "source": {
+    "name": "D021.pdf",
+    "sha256": "3968b5e6c80ec3a90fbd54360bf9a329034b3fe2278b87e7a73a167ce31645f9",
+    "pdf": "source.pdf",
+    "page": 11,
+    "preview": "page.png",
+    "previews": {
+      "11": "page.png"
+    }
+  },
+  "raw_artifacts": [],
+  "grid": {
+    "label": "Table 1",
+    "rows": 5,
+    "columns": 4,
+    "evidence_ids": [
+      "table"
+    ],
+    "caption_evidence_id": "caption",
+    "unplaced_evidence_ids": []
+  },
+  "cells": [
+    {
+      "id": "cell-0-0",
+      "row": 0,
+      "column": 0,
+      "text": "Dataset",
+      "row_span": 1,
+      "column_span": 1,
+      "role": "column_header",
+      "evidence_ids": [
+        "source-cell-0-0",
+        "table"
+      ]
+    },
+    {
+      "id": "cell-0-1",
+      "row": 0,
+      "column": 1,
+      "text": "Deepchecks",
+      "row_span": 1,
+      "column_span": 1,
+      "role": "column_header",
+      "evidence_ids": [
+        "source-cell-0-1",
+        "table"
+      ]
+    },
+    {
+      "id": "cell-0-2",
+      "row": 0,
+      "column": 2,
+      "text": "RAGAS",
+      "row_span": 1,
+      "column_span": 1,
+      "role": "column_header",
+      "evidence_ids": [
+        "source-cell-0-2",
+        "table"
+      ]
+    },
+    {
+      "id": "cell-0-3",
+      "row": 0,
+      "column": 3,
+      "text": "Tangsmith Answer",
+      "row_span": 1,
+      "column_span": 1,
+      "role": "column_header",
+      "evidence_ids": [
+        "source-cell-0-3",
+        "table"
+      ]
+    },
+    {
+      "id": "cell-1-0",
+      "row": 1,
+      "column": 0,
+      "text": "",
+      "row_span": 1,
+      "column_span": 1,
+      "role": "column_header",
+      "evidence_ids": [
+        "source-cell-1-0",
+        "table"
+      ]
+    },
+    {
+      "id": "cell-1-1",
+      "row": 1,
+      "column": 1,
+      "text": "in Context",
+      "row_span": 1,
+      "column_span": 1,
+      "role": "column_header",
+      "evidence_ids": [
+        "source-cell-1-1",
+        "table"
+      ]
+    },
+    {
+      "id": "cell-1-2",
+      "row": 1,
+      "column": 2,
+      "text": "(GPT-40)",
+      "row_span": 1,
+      "column_span": 1,
+      "role": "column_header",
+      "evidence_ids": [
+        "source-cell-1-2",
+        "table"
+      ]
+    },
+    {
+      "id": "cell-1-3",
+      "row": 1,
+      "column": 3,
+      "text": "Faithfulness (GPT-40)",
+      "row_span": 1,
+      "column_span": 1,
+      "role": "column_header",
+      "evidence_ids": [
+        "source-cell-1-3",
+        "table"
+      ]
+    },
+    {
+      "id": "cell-2-0",
+      "row": 2,
+      "column": 0,
+      "text": "TRUE",
+      "row_span": 1,
+      "column_span": 1,
+      "role": "row_header",
+      "evidence_ids": [
+        "source-cell-2-0",
+        "table"
+      ]
+    },
+    {
+      "id": "cell-2-1",
+      "row": 2,
+      "column": 1,
+      "text": "0.86",
+      "row_span": 1,
+      "column_span": 1,
+      "role": "data",
+      "evidence_ids": [
+        "source-cell-2-1",
+        "table"
+      ]
+    },
+    {
+      "id": "cell-2-2",
+      "row": 2,
+      "column": 2,
+      "text": "0.65",
+      "row_span": 1,
+      "column_span": 1,
+      "role": "data",
+      "evidence_ids": [
+        "source-cell-2-2",
+        "table"
+      ]
+    },
+    {
+      "id": "cell-2-3",
+      "row": 2,
+      "column": 3,
+      "text": "ies",
+      "row_span": 1,
+      "column_span": 1,
+      "role": "data",
+      "evidence_ids": [
+        "source-cell-2-3",
+        "table"
+      ]
+    },
+    {
+      "id": "cell-3-0",
+      "row": 3,
+      "column": 0,
+      "text": "SQuAD",
+      "row_span": 1,
+      "column_span": 1,
+      "role": "row_header",
+      "evidence_ids": [
+        "source-cell-3-0",
+        "table"
+      ]
+    },
+    {
+      "id": "cell-3-1",
+      "row": 3,
+      "column": 1,
+      "text": "0.92",
+      "row_span": 1,
+      "column_span": 1,
+      "role": "data",
+      "evidence_ids": [
+        "source-cell-3-1",
+        "table"
+      ]
+    },
+    {
+      "id": "cell-3-2",
+      "row": 3,
+      "column": 2,
+      "text": "0.83",
+      "row_span": 1,
+      "column_span": 1,
+      "role": "data",
+      "evidence_ids": [
+        "source-cell-3-2",
+        "table"
+      ]
+    },
+    {
+      "id": "cell-3-3",
+      "row": 3,
+      "column": 3,
+      "text": "0.65",
+      "row_span": 1,
+      "column_span": 1,
+      "role": "data",
+      "evidence_ids": [
+        "source-cell-3-3",
+        "table"
+      ]
+    },
+    {
+      "id": "cell-4-0",
+      "row": 4,
+      "column": 0,
+      "text": "PubmedQA|",
+      "row_span": 1,
+      "column_span": 1,
+      "role": "row_header",
+      "evidence_ids": [
+        "source-cell-4-0",
+        "table"
+      ]
+    },
+    {
+      "id": "cell-4-1",
+      "row": 4,
+      "column": 1,
+      "text": "0.84",
+      "row_span": 1,
+      "column_span": 1,
+      "role": "data",
+      "evidence_ids": [
+        "source-cell-4-1",
+        "table"
+      ]
+    },
+    {
+      "id": "cell-4-2",
+      "row": 4,
+      "column": 2,
+      "text": "0.80",
+      "row_span": 1,
+      "column_span": 1,
+      "role": "data",
+      "evidence_ids": [
+        "source-cell-4-2",
+        "table"
+      ]
+    },
+    {
+      "id": "cell-4-3",
+      "row": 4,
+      "column": 3,
+      "text": "0.78 angsmith faithfuln",
+      "row_span": 1,
+      "column_span": 1,
+      "role": "data",
+      "evidence_ids": [
+        "source-cell-4-3",
+        "table"
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "id": "page-11",
+      "page": 11,
+      "text": "",
+      "box": null,
+      "precision": "page"
+    },
+    {
+      "id": "table",
+      "page": 11,
+      "text": "Deepchecks | RAGAS Tangsmit Grounded | Faithfulness eevee in Context (GPT-40) Fait ‘ 0.63 0.65 0.84 oe . ‘ > it mith fai",
+      "box": [
+        0.3292179293592437,
+        0.6006522042410715,
+        0.6932489988182773,
+        0.6977045708198052
+      ],
+      "precision": "table"
+    },
+    {
+      "id": "caption",
+      "page": 11,
+      "text": "Table 1. Performance of Deepchecks, RAGAS, and Langs : ; datasets. ment methods in evaluating factual grounding across several",
+      "box": [
+        0.2605738330488445,
+        0.6983878475040585,
+        0.7709426700367648,
+        0.7202903688108766
+      ],
+      "precision": "text_fragment"
+    },
+    {
+      "id": "metric-context",
+      "page": 11,
+      "text": "To benchmark this method, we compared its performance EOD as the lished approaches. The datasets used in this comparison an eke the outputs source of truth, model outputs, and annotations indicating : ls method to score were factually grounded. The classification setup required eac * the ROC-AUC the factual grounding of the outputs, with results evaluated using metric,",
+      "box": [
+        0.24221062155330883,
+        0.4966168133624188,
+        0.7639577041754202,
+        0.578661221590909
+      ],
+      "precision": "text_fragment"
+    },
+    {
+      "id": "source-cell-0-0",
+      "page": 11,
+      "text": "Dataset",
+      "box": [
+        0.3351260504201681,
+        0.6,
+        0.412436974789916,
+        0.6233766233766234
+      ],
+      "precision": "estimated_cell"
+    },
+    {
+      "id": "source-cell-0-1",
+      "page": 11,
+      "text": "Deepchecks",
+      "box": [
+        0.42050420168067226,
+        0.6,
+        0.4900840336134454,
+        0.6233766233766234
+      ],
+      "precision": "estimated_cell"
+    },
+    {
+      "id": "source-cell-0-2",
+      "page": 11,
+      "text": "RAGAS",
+      "box": [
+        0.5186554621848739,
+        0.6,
+        0.5768067226890756,
+        0.6233766233766234
+      ],
+      "precision": "estimated_cell"
+    },
+    {
+      "id": "source-cell-0-3",
+      "page": 11,
+      "text": "Tangsmith Answer",
+      "box": [
+        0.5878991596638655,
+        0.6,
+        0.6984873949579832,
+        0.6233766233766234
+      ],
+      "precision": "estimated_cell"
+    },
+    {
+      "id": "source-cell-1-0",
+      "page": 11,
+      "text": "",
+      "box": [
+        0.3351260504201681,
+        0.625974025974026,
+        0.412436974789916,
+        0.6514285714285715
+      ],
+      "precision": "estimated_cell"
+    },
+    {
+      "id": "source-cell-1-1",
+      "page": 11,
+      "text": "in Context",
+      "box": [
+        0.42050420168067226,
+        0.625974025974026,
+        0.4900840336134454,
+        0.6514285714285715
+      ],
+      "precision": "estimated_cell"
+    },
+    {
+      "id": "source-cell-1-2",
+      "page": 11,
+      "text": "(GPT-40)",
+      "box": [
+        0.5186554621848739,
+        0.625974025974026,
+        0.5768067226890756,
+        0.6514285714285715
+      ],
+      "precision": "estimated_cell"
+    },
+    {
+      "id": "source-cell-1-3",
+      "page": 11,
+      "text": "Faithfulness (GPT-40)",
+      "box": [
+        0.5878991596638655,
+        0.625974025974026,
+        0.6984873949579832,
+        0.6514285714285715
+      ],
+      "precision": "estimated_cell"
+    },
+    {
+      "id": "source-cell-2-0",
+      "page": 11,
+      "text": "TRUE",
+      "box": [
+        0.3351260504201681,
+        0.6532467532467533,
+        0.412436974789916,
+        0.6683116883116883
+      ],
+      "precision": "estimated_cell"
+    },
+    {
+      "id": "source-cell-2-1",
+      "page": 11,
+      "text": "0.86",
+      "box": [
+        0.42050420168067226,
+        0.6532467532467533,
+        0.4900840336134454,
+        0.6683116883116883
+      ],
+      "precision": "estimated_cell"
+    },
+    {
+      "id": "source-cell-2-2",
+      "page": 11,
+      "text": "0.65",
+      "box": [
+        0.5186554621848739,
+        0.6532467532467533,
+        0.5768067226890756,
+        0.6683116883116883
+      ],
+      "precision": "estimated_cell"
+    },
+    {
+      "id": "source-cell-2-3",
+      "page": 11,
+      "text": "ies",
+      "box": [
+        0.5878991596638655,
+        0.6532467532467533,
+        0.6984873949579832,
+        0.6683116883116883
+      ],
+      "precision": "estimated_cell"
+    },
+    {
+      "id": "source-cell-3-0",
+      "page": 11,
+      "text": "SQuAD",
+      "box": [
+        0.3351260504201681,
+        0.6664935064935065,
+        0.412436974789916,
+        0.6820779220779221
+      ],
+      "precision": "estimated_cell"
+    },
+    {
+      "id": "source-cell-3-1",
+      "page": 11,
+      "text": "0.92",
+      "box": [
+        0.42050420168067226,
+        0.6664935064935065,
+        0.4900840336134454,
+        0.6820779220779221
+      ],
+      "precision": "estimated_cell"
+    },
+    {
+      "id": "source-cell-3-2",
+      "page": 11,
+      "text": "0.83",
+      "box": [
+        0.5186554621848739,
+        0.6664935064935065,
+        0.5768067226890756,
+        0.6820779220779221
+      ],
+      "precision": "estimated_cell"
+    },
+    {
+      "id": "source-cell-3-3",
+      "page": 11,
+      "text": "0.65",
+      "box": [
+        0.5878991596638655,
+        0.6664935064935065,
+        0.6984873949579832,
+        0.6820779220779221
+      ],
+      "precision": "estimated_cell"
+    },
+    {
+      "id": "source-cell-4-0",
+      "page": 11,
+      "text": "PubmedQA|",
+      "box": [
+        0.3351260504201681,
+        0.6787012987012987,
+        0.412436974789916,
+        0.7018181818181818
+      ],
+      "precision": "estimated_cell"
+    },
+    {
+      "id": "source-cell-4-1",
+      "page": 11,
+      "text": "0.84",
+      "box": [
+        0.42050420168067226,
+        0.6787012987012987,
+        0.4900840336134454,
+        0.7018181818181818
+      ],
+      "precision": "estimated_cell"
+    },
+    {
+      "id": "source-cell-4-2",
+      "page": 11,
+      "text": "0.80",
+      "box": [
+        0.5186554621848739,
+        0.6787012987012987,
+        0.5768067226890756,
+        0.7018181818181818
+      ],
+      "precision": "estimated_cell"
+    },
+    {
+      "id": "source-cell-4-3",
+      "page": 11,
+      "text": "0.78 angsmith faithfuln",
+      "box": [
+        0.5878991596638655,
+        0.6787012987012987,
+        0.6984873949579832,
+        0.7018181818181818
+      ],
+      "precision": "estimated_cell"
+    }
+  ],
+  "context_evidence_ids": [
+    "metric-context"
+  ],
+  "results": [],
+  "remarks": [
+    {
+      "reason": "Для подтверждения результатов метрик нужно сверить шапку и условия эксперимента.",
+      "raw_text": "",
+      "source": {
+        "page": 11,
+        "table": 1,
+        "row": null,
+        "column": null,
+        "headers": [],
+        "box": null,
+        "evidence_ids": [
+          "table"
+        ],
+        "cell_id": null
+      },
+      "id": "remark-0"
+    },
+    {
+      "reason": "Сверьте распознанный заголовок столбца с оригиналом.",
+      "raw_text": "Deepchecks",
+      "source": {
+        "page": 11,
+        "table": 1,
+        "row": 0,
+        "column": 1,
+        "headers": [],
+        "box": null,
+        "evidence_ids": [
+          "source-cell-0-1",
+          "table"
+        ],
+        "cell_id": "cell-0-1"
+      },
+      "id": "remark-1"
+    },
+    {
+      "reason": "Сверьте распознанный заголовок столбца с оригиналом.",
+      "raw_text": "RAGAS",
+      "source": {
+        "page": 11,
+        "table": 1,
+        "row": 0,
+        "column": 2,
+        "headers": [],
+        "box": null,
+        "evidence_ids": [
+          "source-cell-0-2",
+          "table"
+        ],
+        "cell_id": "cell-0-2"
+      },
+      "id": "remark-2"
+    },
+    {
+      "reason": "Сверьте распознанный заголовок столбца с оригиналом.",
+      "raw_text": "Tangsmith Answer",
+      "source": {
+        "page": 11,
+        "table": 1,
+        "row": 0,
+        "column": 3,
+        "headers": [],
+        "box": null,
+        "evidence_ids": [
+          "source-cell-0-3",
+          "table"
+        ],
+        "cell_id": "cell-0-3"
+      },
+      "id": "remark-3"
+    },
+    {
+      "reason": "Сверьте распознанный заголовок столбца с оригиналом.",
+      "raw_text": "in Context",
+      "source": {
+        "page": 11,
+        "table": 1,
+        "row": 1,
+        "column": 1,
+        "headers": [],
+        "box": null,
+        "evidence_ids": [
+          "source-cell-1-1",
+          "table"
+        ],
+        "cell_id": "cell-1-1"
+      },
+      "id": "remark-4"
+    },
+    {
+      "reason": "Сверьте распознанный заголовок столбца с оригиналом.",
+      "raw_text": "(GPT-40)",
+      "source": {
+        "page": 11,
+        "table": 1,
+        "row": 1,
+        "column": 2,
+        "headers": [],
+        "box": null,
+        "evidence_ids": [
+          "source-cell-1-2",
+          "table"
+        ],
+        "cell_id": "cell-1-2"
+      },
+      "id": "remark-5"
+    },
+    {
+      "reason": "Сверьте распознанный заголовок столбца с оригиналом.",
+      "raw_text": "Faithfulness (GPT-40)",
+      "source": {
+        "page": 11,
+        "table": 1,
+        "row": 1,
+        "column": 3,
+        "headers": [],
+        "box": null,
+        "evidence_ids": [
+          "source-cell-1-3",
+          "table"
+        ],
+        "cell_id": "cell-1-3"
+      },
+      "id": "remark-6"
+    },
+    {
+      "reason": "OCR не прочитал числовую ячейку целиком.",
+      "raw_text": "ies",
+      "source": {
+        "page": 11,
+        "table": 1,
+        "row": 2,
+        "column": 3,
+        "headers": [],
+        "box": null,
+        "evidence_ids": [
+          "source-cell-2-3",
+          "table"
+        ],
+        "cell_id": "cell-2-3"
+      },
+      "id": "remark-7"
+    },
+    {
+      "reason": "В названии строки OCR мог добавить лишний символ.",
+      "raw_text": "PubmedQA|",
+      "source": {
+        "page": 11,
+        "table": 1,
+        "row": 4,
+        "column": 0,
+        "headers": [],
+        "box": null,
+        "evidence_ids": [
+          "source-cell-4-0",
+          "table"
+        ],
+        "cell_id": "cell-4-0"
+      },
+      "id": "remark-8"
+    },
+    {
+      "reason": "OCR не прочитал числовую ячейку целиком.",
+      "raw_text": "0.78 angsmith faithfuln",
+      "source": {
+        "page": 11,
+        "table": 1,
+        "row": 4,
+        "column": 3,
+        "headers": [],
+        "box": null,
+        "evidence_ids": [
+          "source-cell-4-3",
+          "table"
+        ],
+        "cell_id": "cell-4-3"
+      },
+      "id": "remark-9"
+    }
+  ]
+}

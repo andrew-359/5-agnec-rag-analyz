@@ -1,0 +1,275 @@
+{
+  "document": "D009.pdf",
+  "sha256": "8fd9ce01afa9c483a4e7b60f4d69ff97e61df96e1611fd7bddb5a80c94714145",
+  "pages": [
+    5
+  ],
+  "fragments": [
+    {
+      "id": "8fd9ce01afa9-p5-text-1",
+      "page": 5,
+      "text": "Table 1: Comparison of different RAG methods across 5 benchmarks using EM and F1 metrics. Bold denotes\nthe best performance, and underlining denotes the second-best. indicates statistically significant improvements",
+      "box": [
+        0.118512,
+        0.085583,
+        0.880982,
+        0.111618
+      ],
+      "precision": "text_fragment"
+    },
+    {
+      "id": "8fd9ce01afa9-p5-text-2",
+      "page": 5,
+      "text": "†",
+      "box": [
+        0.55132,
+        0.103593,
+        0.557456,
+        0.111876
+      ],
+      "precision": "text_fragment"
+    },
+    {
+      "id": "8fd9ce01afa9-p5-text-3",
+      "page": 5,
+      "text": "(p < 0.05) over representative RL baselines (Search-R1, ReasonRAG) using a two-sided paired t-test. Full\nsignificance tests, including comparisons with StepSearch, are detailed in Appendix F.",
+      "box": [
+        0.118479,
+        0.113618,
+        0.880975,
+        0.14002
+      ],
+      "precision": "text_fragment"
+    },
+    {
+      "id": "8fd9ce01afa9-p5-text-4",
+      "page": 5,
+      "text": "PopQA HotpotQA\nType Method",
+      "box": [
+        0.123003,
+        0.160314,
+        0.487156,
+        0.17894
+      ],
+      "precision": "text_fragment"
+    },
+    {
+      "id": "8fd9ce01afa9-p5-text-5",
+      "page": 5,
+      "text": "EM F1 EM F1",
+      "box": [
+        0.31716,
+        0.18063,
+        0.482409,
+        0.191863
+      ],
+      "precision": "text_fragment"
+    },
+    {
+      "id": "8fd9ce01afa9-p5-text-6",
+      "page": 5,
+      "text": "Direct 14.8 19.0 18.7 26.6\nZero-shot",
+      "box": [
+        0.123003,
+        0.201846,
+        0.487924,
+        0.220472
+      ],
+      "precision": "text_fragment"
+    },
+    {
+      "id": "8fd9ce01afa9-p5-text-7",
+      "page": 5,
+      "text": "Standard RAG 37.4 44.1 31.6 41.9",
+      "box": [
+        0.204418,
+        0.217192,
+        0.487924,
+        0.228424
+      ],
+      "precision": "text_fragment"
+    },
+    {
+      "id": "8fd9ce01afa9-p5-text-8",
+      "page": 5,
+      "text": "FLARE 15.5 19.6 18.8 26.6\nSelf-RAG 30.0 38.6 18.2 29.6\nAdvanced",
+      "box": [
+        0.123003,
+        0.238408,
+        0.487924,
+        0.272381
+      ],
+      "precision": "text_fragment"
+    },
+    {
+      "id": "8fd9ce01afa9-p5-text-9",
+      "page": 5,
+      "text": "IRCoT 32.7 40.7 31.2 42.8\nSearch-o1 10.7 15.0 18.5 26.5",
+      "box": [
+        0.204418,
+        0.2691,
+        0.487924,
+        0.295679
+      ],
+      "precision": "text_fragment"
+    },
+    {
+      "id": "8fd9ce01afa9-p5-text-10",
+      "page": 5,
+      "text": "AutoRAG 24.1 31.2 14.8 24.1\nSearch-R1 40.7 46.8 37.9 49.6\nRL-based",
+      "box": [
+        0.123003,
+        0.305661,
+        0.487924,
+        0.339634
+      ],
+      "precision": "text_fragment"
+    },
+    {
+      "id": "8fd9ce01afa9-p5-text-11",
+      "page": 5,
+      "text": "ReasonRAG 37.8 44.9 36.4 47.5\nStepSearch 39.2 45.0 38.7 50.7",
+      "box": [
+        0.204418,
+        0.336354,
+        0.487924,
+        0.363607
+      ],
+      "precision": "text_fragment"
+    },
+    {
+      "id": "8fd9ce01afa9-p5-text-12",
+      "page": 5,
+      "text": "Ours PRO-STEP 40.5 47.4† 38.7 51.6†",
+      "box": [
+        0.123003,
+        0.372916,
+        0.490293,
+        0.384823
+      ],
+      "precision": "text_fragment"
+    },
+    {
+      "id": "8fd9ce01afa9-p5-text-13",
+      "page": 5,
+      "text": "2WikiMulti Bamboogle MuSiQue Average\nEM F1 EM F1 EM F1 EM F1\n24.6 29.3 12.0 19.2 4.0 11.9 14.8 21.2\n28.3 34.6 16.8 25.1 4.8 12.3 23.8 31.6\n24.6 29.0 12.0 19.2 4.0 11.6 15.0 21.2\n13.2 25.0 5.6 18.0 4.7 11.8 14.3 24.6\n26.2 35.1 23.2 33.6 6.2 13.0 23.9 33.0\n19.6 23.4 25.6 38.5 4.5 11.8 15.8 23.0\n11.0 20.4 23.2 34.3 6.5 13.1 15.9 24.6\n34.9 42.5 33.6 43.6 13.0 21.2 32.0 40.7\n39.8 46.3 38.4 46.9 10.6 19.2 32.6 41.0\n40.4 47.1 33.6 44.2 13.8 23.1 33.2 42.0\n44.1† 51.4† 36.8 47.6 12.5 22.4 34.5† 44.1†",
+      "box": [
+        0.508428,
+        0.160314,
+        0.880275,
+        0.384823
+      ],
+      "precision": "text_fragment"
+    },
+    {
+      "id": "8fd9ce01afa9-p5-text-14",
+      "page": 5,
+      "text": "4 Experiments",
+      "box": [
+        0.119031,
+        0.415844,
+        0.258498,
+        0.430045
+      ],
+      "precision": "text_fragment"
+    },
+    {
+      "id": "8fd9ce01afa9-p5-text-15",
+      "page": 5,
+      "text": "In this section, we present the experimental settings\nand results.",
+      "box": [
+        0.119031,
+        0.442791,
+        0.485713,
+        0.471843
+      ],
+      "precision": "text_fragment"
+    },
+    {
+      "id": "8fd9ce01afa9-p5-text-16",
+      "page": 5,
+      "text": "4.1 Experimental Setup\nDatasets and Evaluation Metrics. We evaluate\nPRO-STEP on five benchmark datasets spanning\nsingle-hop and multi-hop question answering (QA).\nFor single-hop QA, we use PopQA (Mallen et al.,\n2023). For multi-hop QA, we use HotpotQA (Yang\net al., 2018), 2WikiMultiHopQA (Ho et al., 2020),\nBamboogle (Press et al., 2023), and MuSiQue\n(Trivedi et al., 2022). We report Exact Match (EM)\nand F1 score using the FlashRAG evaluation frame-\nwork (Jin et al., 2025b) for reproducibility.",
+      "box": [
+        0.118371,
+        0.489138,
+        0.488928,
+        0.668583
+      ],
+      "precision": "text_fragment"
+    },
+    {
+      "id": "8fd9ce01afa9-p5-text-17",
+      "page": 5,
+      "text": "Implementation Details. We employ Qwen2.5-\n7B-Instruct (Qwen Team, 2024) as the primary\nbackbone for PRO-STEP and most baselines. For\nspecific baselines, we utilize their official model\ncheckpoints to ensure a fair comparison: Self-RAG\nemploys its specialized Llama-2-13B variant (Asai\net al., 2024), and AutoRAG utilizes Llama-3-8B-\nInstruct (Yu et al., 2024). For retrieval, we use the\n2018 Wikipedia dump consisting of 5.9M docu-\nments, indexed with the BGE-base-en-v1.5 (Xiao\net al., 2024) retriever, and set the number of re-\ntrieved passages to k = 3 across all methods to\nensure consistency. We train PRO-STEP on a cu-\nrated mixture of 5,000 multi-hop QA questions,\ncomprising 2,000 instances each from the training",
+      "box": [
+        0.118573,
+        0.683352,
+        0.488765,
+        0.921634
+      ],
+      "precision": "text_fragment"
+    },
+    {
+      "id": "8fd9ce01afa9-p5-text-18",
+      "page": 5,
+      "text": "splits of HotpotQA and MuSiQue, and 1,000 from\n2WikiMultiHopQA. For PRM training, we sample\n16 trajectories for each of the 2,000 questions from\nSection 3.1 above. For policy optimization, we\nthen construct step-level preference pairs via PRM-\nguided VTS. Detailed data statistics and filtering\nprocedures are deferred to Section B.",
+      "box": [
+        0.512915,
+        0.415743,
+        0.884024,
+        0.525411
+      ],
+      "precision": "text_fragment"
+    },
+    {
+      "id": "8fd9ce01afa9-p5-text-19",
+      "page": 5,
+      "text": "Baselines. We evaluate PRO-STEP against 10\nbaselines categorized into three groups: Zero-\nshot Baselines (Naive Generation, Standard RAG\n(Lewis et al., 2020)), Advanced RAG featuring\nadaptive retrieval mechanisms and iterative reason-\ning capabilities (FLARE (Jiang et al., 2023), Self-\nRAG, IRCoT (Trivedi et al., 2023), Search-o1 (Li\net al., 2025a)), and RL-based RAG paradigms\nthat leverage autonomous exploration and test-\ntime scaling, including outcome-reward meth-\nods (AutoRAG, Search-R1 (Jin et al., 2025a))\nand process-reward methods (ReasonRAG (Zhang\net al., 2025a), StepSearch (Zheng et al., 2025b)).\nSee Section D for training hyperparameters.",
+      "box": [
+        0.513685,
+        0.539949,
+        0.88418,
+        0.762138
+      ],
+      "precision": "text_fragment"
+    },
+    {
+      "id": "8fd9ce01afa9-p5-text-20",
+      "page": 5,
+      "text": "4.2 Main Results\nThe main results comparing PRO-STEP with base-\nline methods across five datasets are presented in\nTable 1. From the results, we make the following\nkey observations:",
+      "box": [
+        0.513722,
+        0.779202,
+        0.884021,
+        0.861948
+      ],
+      "precision": "text_fragment"
+    },
+    {
+      "id": "8fd9ce01afa9-p5-text-21",
+      "page": 5,
+      "text": "Overall results. PRO-STEP achieves the highest\naverage performance across all evaluated methods,\nrecording 34.5 EM and 44.1 F1 (significance tests",
+      "box": [
+        0.51429,
+        0.876486,
+        0.883271,
+        0.921634
+      ],
+      "precision": "text_fragment"
+    },
+    {
+      "id": "8fd9ce01afa9-p5-text-22",
+      "page": 5,
+      "text": "37908",
+      "box": [
+        0.478996,
+        0.930607,
+        0.524812,
+        0.943564
+      ],
+      "precision": "text_fragment"
+    }
+  ],
+  "engine_version": "0.11.10",
+  "schema_version": 1
+}

@@ -1,0 +1,167 @@
+{
+  "document": "D005.pdf",
+  "sha256": "0c092c75df6a1fb2bb7279882979d3ab71edb52ef57a4f8280f1071fbb564616",
+  "pages": [
+    10
+  ],
+  "fragments": [
+    {
+      "id": "0c092c75df6a-p10-text-1",
+      "page": 10,
+      "text": "A Sensitivity to CoT Instructions",
+      "box": [
+        0.119031,
+        0.08781,
+        0.416201,
+        0.102011
+      ],
+      "precision": "text_fragment"
+    },
+    {
+      "id": "0c092c75df6a-p10-text-2",
+      "page": 10,
+      "text": "To study the sensitivity of RAG QA generated an-\nswers to prompt instructions, we experimented\nwith three variations of the instruction prompt\nin G.2 (Prompt-A). For the first variant (Prompt-\nB), updated step 1 to directly ask for evaluat-\ning individual references, and consolidated step\n2 and 3 with emphasis on saying “I don’t know”\nwhen provided information is insufficient. For\nthe second variant (Prompt-C), we removed the\nemphasis on “I don’t know”. Finally, in the last\nvariant (Prompt-D), we removed all CoT step in-\nstructions and just asked for thinking before an-\nswering the question. In these experiments, we\nused llama-3.3-70b-instruct (Grattafiori et al.,\n2024) as the generative model and a holdout set\nfrom the Web Pages (C) dataset as our test set.",
+      "box": [
+        0.118371,
+        0.119446,
+        0.488977,
+        0.373822
+      ],
+      "precision": "text_fragment"
+    },
+    {
+      "id": "0c092c75df6a-p10-text-3",
+      "page": 10,
+      "text": "Based on the comparison of results presented in\nTable 4, alight the base instructions are the same,\nand the only difference is CoT step instructions, we\nsee significant sensitivity to the prompt variations.\nThis is particularly important for the case of refusal\nanswers as explicit step instruction on refusing with\n“I don’t know”, seem to severely increase the refusal\nrate, while a very similar instruction is provided\nin the task definition above CoT steps for the base\nprompt. Also, it is worth noting that having no\ninstructions, and simply asking to \"think before\nanswer\" has a competitive performance compared\nto engineered prompts for this specific task.",
+      "box": [
+        0.116594,
+        0.379683,
+        0.488915,
+        0.585777
+      ],
+      "precision": "text_fragment"
+    },
+    {
+      "id": "0c092c75df6a-p10-text-4",
+      "page": 10,
+      "text": "Instruction Accuracy Hallucination Missing Factuality\nPrompt-A 69.9% 18.4% 11.7% 51.5%\nPrompt-B 63.2% 15.5% 21.4% 47.7%\nPrompt-C 69.2% 18.7% 12.1% 50.5%\nPrompt-D 69.3% 19.6% 11.1% 49.7%",
+      "box": [
+        0.131069,
+        0.609606,
+        0.474363,
+        0.662385
+      ],
+      "precision": "text_fragment"
+    },
+    {
+      "id": "0c092c75df6a-p10-text-5",
+      "page": 10,
+      "text": "Table 4: Experiments to study the sensitivity of RAG\nQA factuality metrics to CoT step instructions.",
+      "box": [
+        0.118512,
+        0.678884,
+        0.485707,
+        0.704919
+      ],
+      "precision": "text_fragment"
+    },
+    {
+      "id": "0c092c75df6a-p10-text-6",
+      "page": 10,
+      "text": "B Strategization Examples",
+      "box": [
+        0.119031,
+        0.748283,
+        0.361712,
+        0.762484
+      ],
+      "precision": "text_fragment"
+    },
+    {
+      "id": "0c092c75df6a-p10-text-7",
+      "page": 10,
+      "text": "We present two additional examples for the strate-\ngization CoT process. In the first example, the\nreasoning steps are dynamically defined to focus\non specific sections and entities in a legal docu-\nment to extract the final summary. However, in\nthe second example, the focus is on comparing and\nanalyzing entities relented such as language and\npublication year for a book title before proving the\nfinal answer.",
+      "box": [
+        0.11817,
+        0.779919,
+        0.488753,
+        0.921634
+      ],
+      "precision": "text_fragment"
+    },
+    {
+      "id": "0c092c75df6a-p10-text-8",
+      "page": 10,
+      "text": "Figure 5: Examples of strategization CoT inference\nprocess demonstrating the dynamic generation of CoT\nsteps. Samples taken from the Wiki dataset. Reference\ndocuments are not shown here.",
+      "box": [
+        0.51429,
+        0.643902,
+        0.881493,
+        0.698339
+      ],
+      "precision": "text_fragment"
+    },
+    {
+      "id": "0c092c75df6a-p10-text-9",
+      "page": 10,
+      "text": "C Seed Data Generation",
+      "box": [
+        0.51429,
+        0.72493,
+        0.737428,
+        0.739131
+      ],
+      "precision": "text_fragment"
+    },
+    {
+      "id": "0c092c75df6a-p10-text-10",
+      "page": 10,
+      "text": "Here, we consider two main content sources:",
+      "box": [
+        0.51429,
+        0.749401,
+        0.843407,
+        0.762359
+      ],
+      "precision": "text_fragment"
+    },
+    {
+      "id": "0c092c75df6a-p10-text-11",
+      "page": 10,
+      "text": "• Wiki Pages: We sampled about 10K pages",
+      "box": [
+        0.536161,
+        0.774055,
+        0.880973,
+        0.787791
+      ],
+      "precision": "text_fragment"
+    },
+    {
+      "id": "0c092c75df6a-p10-text-12",
+      "page": 10,
+      "text": "from the English Wikipedia data set2. First, fil-\ntered very short pages of less than 500 words\nor 10 lines as well as any pages longer than\n7000 words or more than 1000 lines. Then,\nwe split each page to non-overlapping text\nchunks, randomized and shuffled to eventu-\nally have 2 to 15 references of size between\n2https://dumps.wikimedia.org",
+      "box": [
+        0.535545,
+        0.787958,
+        0.884026,
+        0.920985
+      ],
+      "precision": "text_fragment"
+    },
+    {
+      "id": "0c092c75df6a-p10-text-13",
+      "page": 10,
+      "text": "784",
+      "box": [
+        0.48816,
+        0.930607,
+        0.515649,
+        0.943564
+      ],
+      "precision": "text_fragment"
+    }
+  ],
+  "engine_version": "0.11.10",
+  "schema_version": 1
+}

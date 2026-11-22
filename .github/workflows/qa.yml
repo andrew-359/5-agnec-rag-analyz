@@ -1,0 +1,151 @@
+name: React QA
+
+on:
+  push:
+  workflow_dispatch:
+    inputs:
+      fail_pdf_source:
+        description: "Воспроизвести падение PDF и проверить диагностику Allure"
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+jobs:
+  browser-tests:
+    name: Selenium, API, workers and Allure
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          persist-credentials: false
+
+      - uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38 # v6
+        with:
+          node-version: '24'
+
+      - uses: actions/setup-java@d1374f8ac74474200d16ef8ecee22c7ae7a51880 # v6
+        with:
+          distribution: temurin
+          java-version: '21'
+          cache: gradle
+          cache-dependency-path: |
+            qa/java/*.gradle.kts
+            qa/java/gradle/wrapper/gradle-wrapper.properties
+
+      - name: Install web dependencies
+        run: |
+          npm install --global pnpm@10.30.0
+          pnpm --dir web install --frozen-lockfile
+
+      - name: Run Selenium and generate Allure
+        id: selenium
+        shell: bash
+        env:
+          FAIL_PDF_SOURCE: ${{ inputs.fail_pdf_source && 'true' || 'false' }}
+        run: |
+          mkdir -p qa/java/build/ci
+          {
+            export CHROME_BIN="$(command -v google-chrome)"
+            export CHROMEDRIVER="${CHROMEWEBDRIVER:?ChromeDriver directory is missing}/chromedriver"
+            "$CHROME_BIN" --version
+            "$CHROMEDRIVER" --version
+            qa/java/gradlew -p qa/java test --no-daemon -PqaFailSource="$FAIL_PDF_SOURCE"
+          } 2>&1 | tee qa/java/build/ci/selenium.log
+
+      - name: Verify executed and grouped browser tests
+        shell: bash
+        run: |
+          test -s qa/java/build/allure-report/index.html
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+
+          summary = Path("qa/java/build/allure-report/widgets/summary.json")
+          stats = json.loads(summary.read_text(encoding="utf-8"))["statistic"]
+          if stats["passed"] < 1 or stats["failed"] or stats["broken"] or stats["unknown"]:
+              raise SystemExit(f"Expected executed and passing tests, got {stats}")
+          results = list(Path("qa/java/build/allure-results").glob("*-result.json"))
+          if not results:
+              raise SystemExit("Allure result files are missing")
+          for result in results:
+              data = json.loads(result.read_text(encoding="utf-8"))
+              labels = {label["name"] for label in data["labels"] if label["value"]}
+              if not {"epic", "feature", "story"} <= labels:
+                  raise SystemExit(f"Missing Allure groups for {data['name']}")
+          PY
+
+      - name: Install Python QA dependencies
+        if: ${{ !cancelled() }}
+        shell: bash
+        run: |
+          mkdir -p qa/java/build/ci
+          python3 -m venv "$RUNNER_TEMP/rag-qa-python"
+          "$RUNNER_TEMP/rag-qa-python/bin/python" -m pip install -r qa/requirements-ci.txt 2>&1 | tee qa/java/build/ci/python-dependencies.log
+          printf 'RAG_PYTHON=%s\n' "$RUNNER_TEMP/rag-qa-python/bin/python" >> "$GITHUB_ENV"
+
+      - name: Run backend contracts and worker orchestration tests
+        id: backend
+        if: ${{ !cancelled() }}
+        shell: bash
+        run: |
+          mkdir -p qa/java/build/ci
+          test -x "${RAG_PYTHON:?Python QA environment is missing}"
+          pnpm --dir web test:qa 2>&1 | tee qa/java/build/ci/backend.log
+
+      - name: Run Python extraction and validation tests
+        id: workers
+        if: ${{ !cancelled() }}
+        shell: bash
+        run: |
+          mkdir -p qa/java/build/ci
+          test -x "${RAG_PYTHON:?Python QA environment is missing}"
+          bash qa/run_workers.sh 2>&1 | tee qa/java/build/ci/workers.log
+
+      - name: Save run metadata
+        if: ${{ !cancelled() }}
+        env:
+          SELENIUM_STATUS: ${{ steps.selenium.outcome }}
+          BACKEND_STATUS: ${{ steps.backend.outcome }}
+          WORKERS_STATUS: ${{ steps.workers.outcome }}
+        run: |
+          mkdir -p qa/java/build/ci
+          printf 'SHA: %s\nSelenium: %s\nBackend: %s\nPython: %s\n' \
+            "$GITHUB_SHA" "$SELENIUM_STATUS" "$BACKEND_STATUS" "$WORKERS_STATUS" > qa/java/build/ci/run.txt
+
+      - name: Package browser and saved-load reports as standalone HTML
+        id: portable
+        if: ${{ !cancelled() }}
+        run: |
+          qa/java/gradlew -p qa/java loadReport allurePortable --no-daemon \
+            -PloadBaseline="$GITHUB_WORKSPACE/qa/java/load-baselines/d001-2026-11-22.json"
+
+      - name: Upload Allure and diagnostics
+        id: artifacts
+        if: ${{ !cancelled() }}
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7
+        with:
+          name: allure-${{ github.run_id }}-${{ github.run_attempt }}
+          path: |
+            qa/java/build/allure-report/
+            qa/java/build/allure-results/
+            qa/java/build/open-in-browser/
+            qa/java/build/test-results/test/
+            qa/java/build/ci/
+          if-no-files-found: error
+          retention-days: 14
+
+      - name: Write workflow summary
+        if: ${{ !cancelled() }}
+        env:
+          QA_JOB_STATUS: ${{ job.status }}
+          ARTIFACT_URL: ${{ steps.artifacts.outputs.artifact-url }}
+          PORTABLE_STATUS: ${{ steps.portable.outcome }}
+          SELENIUM_STATUS: ${{ steps.selenium.outcome }}
+          BACKEND_STATUS: ${{ steps.backend.outcome }}
+          WORKERS_STATUS: ${{ steps.workers.outcome }}
+          FAIL_PDF_SOURCE: ${{ inputs.fail_pdf_source && 'true' || 'false' }}
+        run: python3 .github/scripts/qa_summary.py

@@ -1,0 +1,8 @@
+#!/bin/sh
+if [ "${1:-}" = "demo" ]; then
+    shift
+    web="$(dirname "$0")/web"
+    pnpm --dir "$web" build || exit $?
+    exec pnpm --dir "$web" start "$@"
+fi
+exec node "$(dirname "$0")/web/scripts/document-cli.ts" "$@"

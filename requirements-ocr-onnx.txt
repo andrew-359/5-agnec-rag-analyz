@@ -1,0 +1,2 @@
+# Optional execution backend for the existing RapidOCR models.
+onnxruntime==1.32.0

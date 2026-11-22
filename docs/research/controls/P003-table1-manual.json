@@ -1,0 +1,313 @@
+{
+  "schema_version": 1,
+  "kind": "manual-audit-control-not-extraction",
+  "date": "2026-11-21",
+  "pdf": "test/P003.pdf",
+  "pdf_sha256": "bb792a1bcd50800e7259ff602d5d947082b2699b7a9723529228e69239bdba22",
+  "saved_run_id": "e006967e-614d-43e7-a858-6fafff79a66f",
+  "artifact_path": "/home/souppxdd/.codex/worktrees/plot-publication/RAG/runs/priority-one/articles/runs/e006967e-614d-43e7-a858-6fafff79a66f/e1916f53-1e6d-434a-b00f-3031cb028ab2/attempts/e610dcb3-f157-4723-992e-0010666632d6/run.json",
+  "artifact_sha256": "8283fa1dfb04d472db0be907fb56f18393fdbdad96d034fc0b4273b80ce2f6cd",
+  "controls": [
+    {
+      "case_id": "P003-T1-Llama-URGen-Accuracy-TED",
+      "page": 6,
+      "table": 1,
+      "method": "URGen (Ours)",
+      "generator": "Llama-3.1-8B",
+      "dataset": "TED",
+      "metric": "Accuracy",
+      "direction": "higher",
+      "raw_value": "80.40%",
+      "raw_unit": "percent",
+      "normalized_value": "0.8040",
+      "normalized_unit": "fraction",
+      "metric_threshold": null,
+      "retrieval_top_k": null,
+      "sample_size": 101,
+      "split": null,
+      "seed_count": null,
+      "aggregation": null,
+      "current_remark": {
+        "reason": "Не удалось однозначно связать число с условиями.",
+        "raw_text": "80.40%",
+        "source": {
+          "page": 6,
+          "table": 1,
+          "row": 3,
+          "column": 2,
+          "headers": [
+            "Accuracy (%) ↑",
+            "TED"
+          ],
+          "box": [
+            0.4137915288748414,
+            0.1904969345365213,
+            0.4627472721537574,
+            0.20435365980794487
+          ],
+          "evidence_ids": [
+            "docling-3-2"
+          ],
+          "figure": null,
+          "cell_id": "cell-3-2"
+        },
+        "field": null,
+        "conditions": {},
+        "condition_sources": {},
+        "options": [],
+        "kind": "ambiguous-binding",
+        "id": "remark-8"
+      },
+      "sources": {
+        "cell": {
+          "page": 6,
+          "box": [
+            0.4137915288748414,
+            0.1904969345365213,
+            0.4627472721537574,
+            0.20435365980794487
+          ]
+        },
+        "generator_group": {
+          "page": 6,
+          "text": "Llama-3.1-8B"
+        },
+        "dataset_definition": {
+          "page": 5,
+          "section": "4.1 Datasets"
+        },
+        "metric_definition": {
+          "page": 6,
+          "section": "4.4 Evaluation Metrics"
+        }
+      }
+    },
+    {
+      "case_id": "P003-T1-Llama-URGen-Accuracy-GD",
+      "page": 6,
+      "table": 1,
+      "method": "URGen (Ours)",
+      "generator": "Llama-3.1-8B",
+      "dataset": "GD",
+      "metric": "Accuracy",
+      "direction": "higher",
+      "raw_value": "51.55%",
+      "raw_unit": "percent",
+      "normalized_value": "0.5155",
+      "normalized_unit": "fraction",
+      "metric_threshold": null,
+      "retrieval_top_k": null,
+      "sample_size": 97,
+      "split": null,
+      "seed_count": null,
+      "aggregation": null,
+      "current_remark": {
+        "reason": "Не удалось однозначно связать число с условиями.",
+        "raw_text": "51.55%",
+        "source": {
+          "page": 6,
+          "table": 1,
+          "row": 3,
+          "column": 3,
+          "headers": [
+            "Accuracy (%) ↑",
+            "GD"
+          ],
+          "box": [
+            0.4828266585509251,
+            0.1904969345365213,
+            0.5317824018298412,
+            0.20435365980794487
+          ],
+          "evidence_ids": [
+            "docling-3-3"
+          ],
+          "figure": null,
+          "cell_id": "cell-3-3"
+        },
+        "field": null,
+        "conditions": {},
+        "condition_sources": {},
+        "options": [],
+        "kind": "ambiguous-binding",
+        "id": "remark-9"
+      },
+      "sources": {
+        "cell": {
+          "page": 6,
+          "box": [
+            0.4828266585509251,
+            0.1904969345365213,
+            0.5317824018298412,
+            0.20435365980794487
+          ]
+        },
+        "generator_group": {
+          "page": 6,
+          "text": "Llama-3.1-8B"
+        },
+        "dataset_definition": {
+          "page": 5,
+          "section": "4.1 Datasets"
+        },
+        "metric_definition": {
+          "page": 6,
+          "section": "4.4 Evaluation Metrics"
+        }
+      }
+    },
+    {
+      "case_id": "P003-T1-Llama-URGen-OC@0.8-TED",
+      "page": 6,
+      "table": 1,
+      "method": "URGen (Ours)",
+      "generator": "Llama-3.1-8B",
+      "dataset": "TED",
+      "metric": "OC@0.8",
+      "direction": "lower",
+      "raw_value": "1.98%",
+      "raw_unit": "percent",
+      "normalized_value": "0.0198",
+      "normalized_unit": "fraction",
+      "metric_threshold": "0.8",
+      "retrieval_top_k": null,
+      "sample_size": 101,
+      "split": null,
+      "seed_count": null,
+      "aggregation": null,
+      "current_remark": {
+        "reason": "Не удалось однозначно связать число с условиями.",
+        "raw_text": "1.98%",
+        "source": {
+          "page": 6,
+          "table": 1,
+          "row": 3,
+          "column": 4,
+          "headers": [
+            "OC@0.8 (%) ↓",
+            "TED"
+          ],
+          "box": [
+            0.5543773602662639,
+            0.1904969345365213,
+            0.595801450733039,
+            0.20435365980794487
+          ],
+          "evidence_ids": [
+            "docling-3-4"
+          ],
+          "figure": null,
+          "cell_id": "cell-3-4"
+        },
+        "field": null,
+        "conditions": {},
+        "condition_sources": {},
+        "options": [],
+        "kind": "ambiguous-binding",
+        "id": "remark-10"
+      },
+      "sources": {
+        "cell": {
+          "page": 6,
+          "box": [
+            0.5543773602662639,
+            0.1904969345365213,
+            0.595801450733039,
+            0.20435365980794487
+          ]
+        },
+        "generator_group": {
+          "page": 6,
+          "text": "Llama-3.1-8B"
+        },
+        "dataset_definition": {
+          "page": 5,
+          "section": "4.1 Datasets"
+        },
+        "metric_definition": {
+          "page": 6,
+          "section": "4.4 Evaluation Metrics"
+        }
+      }
+    },
+    {
+      "case_id": "P003-T1-Llama-URGen-ECE-TED",
+      "page": 6,
+      "table": 1,
+      "method": "URGen (Ours)",
+      "generator": "Llama-3.1-8B",
+      "dataset": "TED",
+      "metric": "ECE",
+      "direction": "lower",
+      "raw_value": "6.80%",
+      "raw_unit": "percent",
+      "normalized_value": "0.0680",
+      "normalized_unit": "fraction",
+      "metric_threshold": null,
+      "retrieval_top_k": null,
+      "sample_size": 101,
+      "split": null,
+      "seed_count": null,
+      "aggregation": null,
+      "current_remark": {
+        "reason": "Не удалось однозначно связать число с условиями.",
+        "raw_text": "6.80%",
+        "source": {
+          "page": 6,
+          "table": 1,
+          "row": 3,
+          "column": 6,
+          "headers": [
+            "ECE (%) ↓",
+            "TED"
+          ],
+          "box": [
+            0.6899320475791761,
+            0.1904969345365213,
+            0.7313561380459513,
+            0.20435365980794487
+          ],
+          "evidence_ids": [
+            "docling-3-6"
+          ],
+          "figure": null,
+          "cell_id": "cell-3-6"
+        },
+        "field": null,
+        "conditions": {},
+        "condition_sources": {},
+        "options": [],
+        "kind": "ambiguous-binding",
+        "id": "remark-12"
+      },
+      "sources": {
+        "cell": {
+          "page": 6,
+          "box": [
+            0.6899320475791761,
+            0.1904969345365213,
+            0.7313561380459513,
+            0.20435365980794487
+          ]
+        },
+        "generator_group": {
+          "page": 6,
+          "text": "Llama-3.1-8B"
+        },
+        "dataset_definition": {
+          "page": 5,
+          "section": "4.1 Datasets"
+        },
+        "metric_definition": {
+          "page": 6,
+          "section": "4.4 Evaluation Metrics"
+        }
+      }
+    }
+  ],
+  "scope_cautions": [
+    "Five seeds belong to Table 3, not Table 1.",
+    "Top K=5 candidate pool is not URGen fixed context depth.",
+    "No test gold provided; controls are manual source verification."
+  ]
+}

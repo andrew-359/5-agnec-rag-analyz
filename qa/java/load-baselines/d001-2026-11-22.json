@@ -1,0 +1,42 @@
+{
+  "measurement": "D001 · локальный замер 22 ноября 2026 · один Python-воркер",
+  "runs": [
+    {
+      "label": "control",
+      "outcome": "published",
+      "accepted_status": "queued",
+      "last_status": "done",
+      "first_attempt_wait_seconds": 0.709,
+      "duration_seconds": 150.032,
+      "sent_at": 1795315247.3939161,
+      "accepted_at": 1795315247.4047997,
+      "last_observed_at": 1795315397.4262187
+    },
+    {
+      "label": "pair-first",
+      "outcome": "published",
+      "accepted_status": "queued",
+      "last_status": "done",
+      "first_attempt_wait_seconds": 0.728,
+      "duration_seconds": 261.799,
+      "sent_at": 1795315397.4333737,
+      "accepted_at": 1795315397.4534128,
+      "last_observed_at": 1795315659.2322838
+    },
+    {
+      "label": "pair-second",
+      "outcome": "published",
+      "accepted_status": "queued",
+      "last_status": "done",
+      "first_attempt_wait_seconds": 122.193,
+      "duration_seconds": 272.91,
+      "sent_at": 1795315397.4534273,
+      "accepted_at": 1795315397.4672217,
+      "last_observed_at": 1795315670.3631153
+    }
+  ],
+  "pair": {
+    "overlap_confirmed": true
+  },
+  "acceptance_passed": true
+}

@@ -1,0 +1,74 @@
+{
+  "document": "source.pdf",
+  "sha256": "7fcbb21b0bdf5bb222b347d0b5e8d6587aa8af5c5f855f62322d0d7ad5427d3c",
+  "pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+  ],
+  "fragments": [
+    {
+      "id": "7fcbb21b0bdf-p6-text-11",
+      "page": 6,
+      "text": "Table 1: Main results of multi-hop QA datasets. Best results are in bold and second best are underlined.",
+      "box": [
+        0.151927,
+        0.356831,
+        0.84756,
+        0.369376
+      ],
+      "precision": "text_fragment"
+    },
+    {
+      "id": "7fcbb21b0bdf-p6-text-17",
+      "page": 6,
+      "text": "4.2 Inference Performance Comparison",
+      "box": [
+        0.51429,
+        0.675244,
+        0.836332,
+        0.688203
+      ],
+      "precision": "text_fragment"
+    },
+    {
+      "id": "7fcbb21b0bdf-p6-text-18",
+      "page": 6,
+      "text": "Table 1 summarizes the main experimental results\nacross three multi-hop QA datasets. First, we ob-\nserve that KG-Chunk methods (e.g., HippoRAG)\noutperform KG-Rewriting approaches to a certain\nextent (e.g., CoTKR, achieving 0.324 vs. 0.304\nEM on HotpotQA with LLaMA3-8B-Instruct). We\nattribute this to the generative noise and hallucina-\ntions introduced when rewriting discrete subgraphs\ninto text. Second, iterative KG-Triplet prompting\n(e.g., KnowTrace) significantly surpasses KG-Path\nmethods (e.g., PoG, 0.396 vs. 0.336 EM). This\nindicates that faulty path retrieval can easily inject\nerroneous logical chains, which LLMs struggle to\nverify or reject due to the severe loss of surrounding",
+      "box": [
+        0.513685,
+        0.699446,
+        0.884016,
+        0.921634
+      ],
+      "precision": "text_fragment"
+    },
+    {
+      "id": "7fcbb21b0bdf-p7-text-7",
+      "page": 7,
+      "text": "Beyond these flawed paradigms, ThreadRAG di-\nrectly grounds structural guidance within native\ntext sequences to achieve state-of-the-art results.\nFor example, it outperforms the strongest baseline\nKnowTrace, by up to 5.8% EM on 2Wiki (GPT-4o\nmini). Furthermore, it surpasses the text-centric\nIRCoT by a substantial 14.4% EM on the complex\nHotpotQA dataset (Qwen3.5 plus). These signif-\nicant gains demonstrate the effectiveness of our\nSTG in providing high-fidelity structural priors.\nBy providing explicit reasoning pathways without\nfragmenting the original narrative flow, Thread-\nRAG bridges the modality gap, bypassing both the\nsemantic loss of symbolic extraction and the hallu-\ncination risks of generative rewriting.",
+      "box": [
+        0.119031,
+        0.274188,
+        0.488921,
+        0.512471
+      ],
+      "precision": "text_fragment"
+    }
+  ],
+  "engine_version": "0.11.10",
+  "schema_version": 1
+}

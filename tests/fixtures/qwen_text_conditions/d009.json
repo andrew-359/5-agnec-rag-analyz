@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "name": "D009 Table 1, scope control",
+  "pdf_sha256": "8fd9ce01afa9c483a4e7b60f4d69ff97e61df96e1611fd7bddb5a80c94714145",
+  "page": 5,
+  "table": 1,
+  "conditions": [
+    {
+      "field": "generator_model",
+      "value": "Qwen2.5-7B-Instruct",
+      "scope": "PRO-STEP and most baselines",
+      "required_citations": [
+        {
+          "fragment_id": "8fd9ce01afa9-p5-text-17",
+          "quote": "We employ Qwen2.5-\n7B-Instruct (Qwen Team, 2024) as the primary\nbackbone for PRO-STEP and most baselines."
+        }
+      ]
+    }
+  ]
+}
