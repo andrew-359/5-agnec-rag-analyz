@@ -32,6 +32,10 @@ DOWNWARD_CONFIG_AXIS = re.compile(r"\b(?:method|model|retriever|system)s?\s*\(\s
 GENERATOR_AXIS = re.compile(r"(?:generators?|generator models?|answer (?:models?|generators?)|"
                             r"generation models?|generative models?)", re.I)
 AGGREGATE_LABELS = {"all", "across", "average", "avg", "overall", "combined", "total", "macro", "micro"}
+NON_DATASET_LABELS = AGGREGATE_LABELS | {
+    "arabic", "chinese", "english", "french", "german", "hindi", "korean", "russian", "spanish",
+    "document-level", "sentence-level", "paragraph-level", "qa", "retrieval", "faithfulness", "rouge-l",
+}
 MULTI_DATASET_CAPTION = re.compile(
     r"\b(?:across|over|on|for)\s+(?:[\w-]+\s+){0,3}(?:datasets|benchmarks)\b|"
     r"\b(?:across|over|by)\s+(?:[\w-]+\s+){0,3}(?:domains|splits|subsets|categories)\b", re.I,
@@ -347,6 +351,11 @@ class SubmissionPassport:
             fields = {field: value for field, value in fields.items() if value}
             if not fields:
                 return ""
+            if key == "datasets":
+                name = fields["dataset_name"].casefold()
+                for existing in tables["datasets"]:
+                    if existing["dataset_name"].casefold() == name:
+                        return existing["dataset_id"]
             identity = tuple(fields.items())
             if identity not in indexes[key]:
                 indexes[key][identity] = append(key, fields)
@@ -434,8 +443,15 @@ class SubmissionPassport:
                         proposed["method"] = {"value": label_text, "rule": "explicit-configuration-axis",
                                               "sources": [label_cell[1], *axes]}
                 confirmed = {}
+                rejected_dataset = ""
                 for field, claim in proposed.items():
                     if field == "dataset":
+                        label = self.entities.clean(claim["value"]).strip(" :↑↓→")
+                        if (label.casefold() in NON_DATASET_LABELS
+                                or self.entities.known_metric(label, entities, header=False)):
+                            rejected_dataset = label
+                            open_fields.add("dataset")
+                            continue
                         accept = scoped_dataset(
                             claim, address, path, headers, cells, caption_dataset, named_dataset,
                             lambda text: self.entities.known_metric(text, entities),
@@ -517,6 +533,8 @@ class SubmissionPassport:
                     description += " Метрика из шапки. Подпись таблицы не подтверждена."
                 if open_fields:
                     description += " Требуют проверки поля " + ", ".join(sorted(open_fields)) + "."
+                if rejected_dataset:
+                    description += f" Подпись «{rejected_dataset}» не обозначает датасет."
                 if hypotheses:
                     description += " Гипотезы " + ", ".join(f"{k}={v['value']}" for k, v in sorted(hypotheses.items())) + "."
                 append("issues", {"record_ids": rid, "check_name": "B3 паспорт таблицы",
