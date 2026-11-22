@@ -29,13 +29,14 @@ while IFS= read -r -d '' entry; do
     docs/context/RAG_ВИНИТИ_*|web/node_modules|web/node_modules/*|web/dist/*|qa/java/build/*|qa/java/.gradle/*|experiments/entity-passport/*/*) continue ;;
   esac
   case "/$file" in
+    /.env.example) ;;
     */.env|*/.env.*|*/.npmrc|*/.netrc|*.[pP][eE][mM]|*.[pP]12|*.[pP][fF][xX]|*.[kK][eE][yY]|*/id_rsa|*/id_ed25519) continue ;;
   esac
   if [[ "${file,,}" == *.pdf && "$file" != qa/java/src/test/resources/synthetic.pdf ]]; then
     continue
   fi
   case "$file" in
-    .github/*|qa/*|rag_mvp/*|web/*|scripts/*|tests/*|docs/*|    runs/check_saved_outputs.py|runs/d001_load_baseline.py|runs/full_pdf_batch.py|runs/snapshots/*|    experiments/entity-passport/*.py|.scratch/test-submission-build/publication-review.json|    compose.yaml|Dockerfile|requirements*.txt|rag|README.md|GLOSSARY.md|.gitignore|.dockerignore)
+    .github/*|qa/*|rag_mvp/*|web/*|scripts/*|tests/*|docs/*|    runs/check_saved_outputs.py|runs/d001_load_baseline.py|runs/full_pdf_batch.py|runs/snapshots/*|    experiments/entity-passport/*.py|.scratch/test-submission-build/publication-review.json|    compose.yaml|Dockerfile|requirements*.txt|rag|README.md|GLOSSARY.md|.gitignore|.dockerignore|.env.example)
       if [[ "$mode" != 100644 && "$mode" != 100755 ]]; then
         printf 'Unexpected Git entry in the export: %s\n' "$file" >&2
         exit 1
