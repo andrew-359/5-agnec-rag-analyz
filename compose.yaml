@@ -69,12 +69,16 @@ services:
     <<: *app
     command: [python, -m, rag_mvp.article_worker]
     working_dir: /app
+    deploy:
+      replicas: ${RAG_WORKERS:-1}
     depends_on:
       web:
         condition: service_healthy
     environment:
       <<: *runtime
       RAG_OLLAMA_URL: ${RAG_OLLAMA_URL:-}
+      OMP_NUM_THREADS: ${RAG_WORKER_THREADS:-2}
+      OPENBLAS_NUM_THREADS: ${RAG_WORKER_THREADS:-2}
     volumes:
       - rag_data:/app/output/web-articles
     labels:

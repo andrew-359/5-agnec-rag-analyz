@@ -26,7 +26,7 @@ while IFS= read -r -d '' entry; do
   mode=${entry%% *}
   file=${entry#* }
   case "$file" in
-    docs/context/RAG_ВИНИТИ_*|web/node_modules|web/node_modules/*|web/dist/*|qa/java/build/*|qa/java/.gradle/*|experiments/entity-passport/*/*) continue ;;
+    docs/context/RAG_ВИНИТИ_*|docs/agents|docs/agents/*|docs/TO_THINK.md|web/node_modules|web/node_modules/*|web/dist/*|qa/java/build/*|qa/java/.gradle/*|experiments/entity-passport/*/*) continue ;;
   esac
   case "/$file" in
     /.env.example) ;;
@@ -49,6 +49,7 @@ rm -- "$stage/source-files"
 
 git -C "$source_root" archive --format=tar "$revision" -- "${files[@]}" | tar -xf - -C "$stage"
 for entry in .github/workflows/qa.yml .github/scripts/qa_summary.py docs/data-passport.md \
+  docs/adr/README.md docs/extensibility-and-roadmap.md docs/cli.md \
   .scratch/test-submission-build/publication-review.json runs/full_pdf_batch.py \
   experiments/entity-passport/extract.py qa/java/gradle/wrapper/gradle-wrapper.jar web/pnpm-lock.yaml; do
   test -f "$stage/$entry"

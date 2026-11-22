@@ -4,33 +4,29 @@
 
 | Путь | Назначение и вход |
 | --- | --- |
-| [`web/`](../web/README.md) | React review-workspace, Hono и TypeScript CLI. |
-| [`rag_mvp/`](../rag_mvp/__main__.py) | Рабочий Python-пакет извлечения и воркер RabbitMQ. |
+| [`web/`](../web/README.md) | React review-workspace, Hono API и TypeScript CLI. |
+| [`rag_mvp/`](../rag_mvp/__main__.py) | Рабочий Python-пакет извлечения, аудит, сборщик CSV и воркер RabbitMQ. |
 | [`rag_mvp/core/`](../rag_mvp/core/) | Предметные [модели и правила](../rag_mvp/core/domain.py) и [сверка измерений](../rag_mvp/core/measurement_reconciliation.py). |
 | [`rag_mvp/strategies/`](../rag_mvp/strategies/) | Ридеры и реестры [текста](../rag_mvp/strategies/article_text_readers.py), [таблиц](../rag_mvp/strategies/table_readers.py) и [графиков](../rag_mvp/strategies/figure_readers.py). |
-| `archive/` | Локальный архив исходников и артефактов. |
-| [`workers/`](../workers/README.md) | Независимые Rust-пилоты и их контрольные прогоны. |
-| [`ops/`](../ops/hype-demo.md) | Запуск Compose и наблюдаемость. |
+| [`experiments/entity-passport/`](../experiments/entity-passport/extract.py) | Проверенный добавочный слой извлечения табличных значений и сборки CSV. |
 | [`tests/`](../tests/) | Автоматизированные проверки Python и контрольные входы. |
-| [`docs/`](system.md) | Устройство продукта, контракт сдачи и исследования. |
-| [`from-chef/`](../from-chef/README.md) | Решения штаба и обратная связь. |
-| [`.scratch/`](agents/issue-tracker.md) | Локальный трекер спецификаций и задач. |
-| [`runs/`](../runs/README.md) | Команды, контрольные снимки и локальные артефакты прогонов. |
-| `output/` | Локальные данные запущенного приложения. |
-| [`.agents/`](../AGENTS.md) | Проектные навыки и правила работы агента. |
+| [`qa/`](../qa/java/README.md) | Сквозные проверки воркера ([`qa/run_workers.sh`](../qa/run_workers.sh)) и автотесты Java / Allure. |
+| [`scripts/`](../scripts/export_clean_repo.sh) | Служебные скрипты выпуска и экспорта чистого снимка репозитория. |
+| [`runs/`](../runs/full_pdf_batch.py) | Скрипты пакетного прогона, сверки сохранённых выходов и контрольные снимки. |
+| [`docs/`](system.md) | Устройство продукта, [паспорт данных](data-passport.md), [контракт CSV](submission-contract.md), [CLI](cli.md), [ADR](adr/README.md) и [roadmap](extensibility-and-roadmap.md). |
+| [`.github/`](../.github/workflows/qa.yml) | Пайплайн CI-проверок (web QA, Python worker, Java/Allure). |
 
-Входы из корня — [`./rag`](../README.md#cli-прогонов) для CLI и [`compose.yaml`](../compose.yaml) для приложения, воркера и брокера. Отдельный [`compose.rabbitmq.yaml`](../compose.rabbitmq.yaml) запускает брокер для разработки на хосте. [`Dockerfile`](../Dockerfile) собирает образ, `requirements*.txt` описывают Python-зависимости. pnpm обслуживает [пакет `web`](../web/package.json).
+Входы из корня — [`./rag`](../README.md#cli-прогонов) для CLI и [`compose.yaml`](../compose.yaml) для веб-приложения, воркера и брокера RabbitMQ. [`Dockerfile`](../Dockerfile) собирает образ, `requirements*.txt` описывают Python-зависимости, pnpm обслуживает [пакет `web`](../web/package.json).
 
 ## Настройки запуска
 
-- Для каждого запуска используем корневой `.env` на основе [`.env.example`](../.env.example). Полный Compose требует `RAG_CORPUS_DIR`. Параметры брокера и локальных процессов приведены в примере. При запуске на хосте переменные получает каждый нужный процесс через своё окружение. На сервере применяем те же имена переменных.
-- Python-воркер получает адрес уже запущенного Ollama через `RAG_OLLAMA_URL`. Способ запуска, доступные устройства и параллельность относятся к окружению Ollama. [Настройка и проверка подключения](../ops/ollama.md)
-- Обычный запуск работает на CPU. Настроенный Ollama делает модельные ридеры доступными для явного выбора. План `auto` остаётся прежним. Если выбранная модель недоступна, попытка сообщает причину, а остальные этапы продолжают работу.
-- Для сравнения моделей указываем в отчёте фактическое размещение модели и настройки запуска Ollama.
+- Для запуска используется корневой `.env` на основе [`.env.example`](../.env.example). Полный Compose требует `RAG_CORPUS_DIR` (путь к распакованному комплекту PDF). При запуске на хосте переменные передаются каждому процессу через окружение; на сервере используются те же имена переменных.
+- Python-воркер получает адрес уже запущенного Ollama через `RAG_OLLAMA_URL` (по умолчанию `http://127.0.0.1:11434` при локальном запуске). Подробности параметров запуска приведены в [документации CLI](cli.md#локальный-qwen).
+- Штатный план `auto` работает на CPU без внешних моделей. Настроенный Ollama делает модельные ридеры (`qwen-vision`, `propose-table-conditions`) доступными для явного выбора. Если выбранная модель недоступна, попытка сообщает причину, а остальные этапы продолжают работу.
+- Для воспроизводимого сравнения моделей в отчёте фиксируются фактическое размещение модели и параметры запуска Ollama.
 
-## Приёмка раскладки
+## Контроль архитектуры и границ модулей
 
-1. [Архив TypeScript](../.scratch/repository-layout/issues/01-archive-typescript-domain.md) сохраняет свои тесты и ссылки на рабочее ядро.
-2. [Перенос Python-ядра](../.scratch/repository-layout/issues/02-organize-python-core.md) проверен предметными тестами и повтором D001/Table 1 по сохранённой сетке и тексту.
-3. [Перенос стратегий](../.scratch/repository-layout/issues/03-organize-strategy-registries.md) проверен сравнением каталога CLI и HTTP, сборкой Compose и повтором D001.
-4. [Адрес Ollama](../.scratch/repository-layout/issues/04-configure-ollama-url.md) проверен из Compose с заглушкой, закрытым адресом и на обычном плане `auto`.
+1. **Единое Python-ядро (`rag_mvp/core/`)** — доменные типы `Observation`, `ConditionAssertion`, правила валидации метрик/датасетов и `reconcile_measurements` покрыты модульными тестами в [`tests/`](../tests/).
+2. **Расширяемые реестры стратегий (`rag_mvp/strategies/`)** — ридеры текста, таблиц и графиков подключаются через единый контракт и отображаются в `./rag strategies` и `GET /api/strategies` (подробнее в [руководстве по расширению](extensibility-and-roadmap.md)).
+3. **Изоляция LLM/VLM и двухслойный выпуск** — границы доверия и верификации зафиксированы в [ADR-0002](adr/0002-observation-assertion-assemble-core.md), [ADR-0003](adr/0003-two-tier-release-and-ocr-verification.md) и [ADR-0004](adr/0004-llm-and-vlm-integration-boundary.md).
